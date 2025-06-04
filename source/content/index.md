@@ -1,4 +1,4 @@
-- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio.
+- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio
 - **Password spray**: hacking technique. You try the most common passwords on multiple accounts, trying to find an account that used that password;
 - **SIM-jacking**: vulnerability that uses SIMs and SMS content;
 - **Hammering**: hacking technique. Hackers send continuous push notifications until the victim, annoyed by these notifications, accepts one and gives permissions to the intruder;
