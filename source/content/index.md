@@ -1,4 +1,4 @@
-- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio
+- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio.
 - **Password spray**: hacking technique. You try the most common passwords on multiple accounts, trying to find an account that used that password;
 - **SIM-jacking**: vulnerability that uses SIMs and SMS content;
 - **Hammering**: hacking technique. Hackers send continuous push notifications until the victim, annoyed by these notifications, accepts one and gives permissions to the intruder;
@@ -40,7 +40,6 @@
 - **OWL (Web Ontology Language)**: Structured approach to define semantics and relationships between objects. [Link](https://en.wikipedia.org/wiki/Web_Ontology_Language).
 - **RDFS (Resource Description Framework Schema)**: set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies. [Link](https://en.wikipedia.org/wiki/RDF_Schema)
 
-- [ ] riorganizza cartelle
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
 - [ ] sistema link rotti
