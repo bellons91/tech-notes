@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "general/Software Architecture vs Software Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Software Architecture vs Software Design"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "category-folder/Some note.md",
+                "file": "general/Software Architecture vs Software Design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Some note"
+              "title": "Outline of Software Architecture vs Software Design"
             }
           },
           {
@@ -180,9 +180,10 @@
   },
   "active": "462823d501e09554",
   "lastOpenFiles": [
-    "index.md",
-    "category-folder/Some note.md",
     "category-folder/index.md",
+    "general/Software Architecture vs Software Design.md",
+    "category-folder/Some note.md",
+    "index.md",
     "category-folder"
   ]
 }
