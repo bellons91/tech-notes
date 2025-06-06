@@ -3,9 +3,9 @@ tags:
   - dns
   - networking
 ---
-DNS stands for **Domain Name System**, which is the phonebook of the Internet. It is a network service that converts between human-readable domain names (such as `www.example.com`) and machine-friendly IP addresses (such as 192.168.1.1) that browsers use to load web pages.
+DNS stands for **Domain Name System**, which is the phonebook of the Internet. It is a #network service that converts between human-readable domain names (such as `www.example.com`) and machine-friendly IP addresses (such as 192.168.1.1) that browsers use to load web pages.
 
-DNS works by following a series of steps to translate a domain name into an IP address. When a user types a domain name into their web browser, a DNS query is sent to a DNS server, which is a computer that stores a database of domain names and their corresponding IP addresses. The DNS server then performs a lookup process to find the right IP address for the domain name.
+DNS works by following a series of steps to translate a domain name into an #IP address. When a user types a domain name into their web browser, a DNS query is sent to a DNS server, which is a computer that stores a database of domain names and their corresponding IP addresses. The DNS server then performs a lookup process to find the right IP address for the domain name.
 
 The lookup process involves four types of DNS servers:
 

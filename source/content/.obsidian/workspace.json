@@ -4,21 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "63bd0114708e4fa9",
+        "id": "e40965b3a7164cf1",
         "type": "tabs",
         "children": [
           {
-            "id": "462823d501e09554",
+            "id": "788bd55e365c820b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "general/Software Architecture vs Software Design.md",
-                "mode": "source",
-                "source": false
+                "file": "source/content/.obsidian/workspace.json",
+                "staged": false
               },
-              "icon": "lucide-file",
-              "title": "Software Architecture vs Software Design"
+              "icon": "git-pull-request",
+              "title": "Diff View (workspace.json)"
             }
           }
         ]
@@ -53,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:package-management",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,12 +177,19 @@
       "broken-links:View broken links": false
     }
   },
-  "active": "462823d501e09554",
+  "active": "788bd55e365c820b",
   "lastOpenFiles": [
-    "category-folder/index.md",
-    "general/Software Architecture vs Software Design.md",
-    "category-folder/Some note.md",
+    "general/DNS.md",
+    "how-to/How to print Environment Variables in a K8s Pod.md",
+    "how-to/How to Use Husky.NET Pre-commit hooks.md",
+    "how-to/How to view last executed queries in SSMS 2019.md",
+    "how-to/How to use Editorconfig.md",
+    "how-to/How to list all the installed NuGet Packages.md",
+    "how-to/How to Add Azure K8s Cluster on Lens.md",
     "index.md",
+    "general/Software Architecture vs Software Design.md",
+    "category-folder/index.md",
+    "category-folder/Some note.md",
     "category-folder"
   ]
 }
