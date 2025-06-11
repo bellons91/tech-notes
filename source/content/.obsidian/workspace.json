@@ -11,13 +11,14 @@
             "id": "788bd55e365c820b",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "source/content/.obsidian/workspace.json",
-                "staged": false
+                "file": "general/Root Cause Analysis.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "icon": "lucide-file",
+              "title": "Root Cause Analysis"
             }
           }
         ]
@@ -141,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general/Software Architecture vs Software Design.md",
+                "file": "general/Root Cause Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Software Architecture vs Software Design"
+              "title": "Outline of Root Cause Analysis"
             }
           },
           {
@@ -177,8 +178,9 @@
       "broken-links:View broken links": false
     }
   },
-  "active": "788bd55e365c820b",
+  "active": "c2e2300f7f30c24d",
   "lastOpenFiles": [
+    "general/Root Cause Analysis.md",
     "general/DNS.md",
     "how-to/How to print Environment Variables in a K8s Pod.md",
     "how-to/How to Use Husky.NET Pre-commit hooks.md",
