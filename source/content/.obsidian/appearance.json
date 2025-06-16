@@ -1,4 +1,6 @@
 {
   "accentColor": "#5dd0bd",
-  "cssTheme": "Things"
+  "cssTheme": "Moonlight",
+  "theme": "system",
+  "textFontFamily": "Copperplate"
 }
