@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "83391afd622243f0",
+        "id": "f48435432d439656",
         "type": "tabs",
         "children": [
           {
-            "id": "7a9871120920b229",
+            "id": "ef82ced6664cc3bf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "how-to/How to show query results in Azure DevOps Wiki.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "How to show query results in Azure DevOps Wiki"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -174,8 +179,15 @@
       "broken-links:View broken links": false
     }
   },
-  "active": "7a9871120920b229",
+  "active": "ef82ced6664cc3bf",
   "lastOpenFiles": [
+    "how-to/How to show query results in Azure DevOps Wiki.md",
+    "Pasted image 20250625094227.png",
+    "Pasted image 20250625094153.png",
+    "Pasted image 20250625093926.png",
+    "Pasted image 20250625093835.png",
+    "Pasted image 20250625093813.png",
+    "general/Runtime Time Assembly.md",
     "general/Event-Driven Architecture.md",
     "general/Event Sourcing.md",
     "general/Lead smart people.md",
