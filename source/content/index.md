@@ -39,6 +39,13 @@
 - **Hoptimator**: [open-source platform created by LinkedIn](https://www.linkedin.com/blog/engineering/data-streaming-processing/declarative-data-pipelines-with-hoptimator) to manage multi-hop data pipelines.
 - **OWL (Web Ontology Language)**: Structured approach to define semantics and relationships between objects. [Link](https://en.wikipedia.org/wiki/Web_Ontology_Language).
 - **RDFS (Resource Description Framework Schema)**: set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies. [Link](https://en.wikipedia.org/wiki/RDF_Schema)
+- [[Azure Monitor]] with AI-powered investigation:
+	- Link to [announcement](https://techcommunity.microsoft.com/blog/azureobservabilityblog/public-preview-smarter-troubleshooting-in-azure-monitor-with-ai-powered-investig/4411878)
+	- Fine anomalies on the logs, across applications
+	- **Issues**: new entity that helps troubleshooting
+		- AI-powered investigations across several azure sources (both applications and infrastructure resources). It adds a possible solution, and can be tracked by using a Status on the Issue.
+	- Smart scoping: automatically detect the underlying infrastructure
+- **PromQL**: language used by [[Prometheus]]
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag

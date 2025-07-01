@@ -4,20 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f48435432d439656",
+        "id": "34e662f27bd0e21c",
         "type": "tabs",
         "children": [
           {
-            "id": "ef82ced6664cc3bf",
+            "id": "d29fb8c594a694f3",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "source/content/.obsidian/workspace.json",
-                "staged": false
+                "file": "index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -77,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -178,8 +178,9 @@
       "broken-links:View broken links": false
     }
   },
-  "active": "ef82ced6664cc3bf",
+  "active": "d29fb8c594a694f3",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "index.md",
     "how-to/How to show query results in Azure DevOps Wiki.md",
     "Pasted image 20250625094227.png",
