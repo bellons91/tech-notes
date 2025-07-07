@@ -47,6 +47,7 @@
 	- Smart scoping: automatically detect the underlying infrastructure
 - **PromQL**: language used by [[Prometheus]]
 - **[[Source Generator]]**: a way to generate classes dynamically, without having them stored as "concrete" files (so, they are not stored on GIT)
+- `extern` keyword in C#: this modifier indicates that the method is implemented externally, not in C# code. The implementation is usually provided in a DLL.
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
