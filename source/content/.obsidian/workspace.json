@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 394.5
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -170,6 +170,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "templates:Insert template": false,
@@ -178,10 +179,11 @@
       "broken-links:View broken links": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "d29fb8c594a694f3",
   "lastOpenFiles": [
-    "general/Source Generator.md",
+    "how-to/How to use variables in a TSQL query.md",
     "index.md",
+    "general/Source Generator.md",
     "conflict-files-obsidian-git.md",
     "how-to/How to show query results in Azure DevOps Wiki.md",
     "Pasted image 20250625094227.png",

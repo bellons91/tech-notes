@@ -48,6 +48,10 @@
 - **PromQL**: language used by [[Prometheus]]
 - **[[Source Generator]]**: a way to generate classes dynamically, without having them stored as "concrete" files (so, they are not stored on GIT)
 - `extern` keyword in C#: this modifier indicates that the method is implemented externally, not in C# code. The implementation is usually provided in a DLL.
+- **Assembly Trimming**: it is a process in .NET where unused code (types, methods, assemblies) is removed from your application during build or publish. This makes the final app smaller and faster by including only what's actually needed for execution. It's especially useful for optimizing deployments in environments like cloud or mobile.
+- **AOT (Ahead-of-Time) compilation** is a process where source code is compiled into native machine code before the application runs, rather than during execution. This can lead to faster startup times and better performance because the code doesn’t need to be compiled by the runtime at launch. In .NET, AOT is used to create self-contained, optimized applications for platforms where Just-In-Time (**JIT**) compilation isn’t possible or desired. Also called **Native Compile**.
+- **JIT (Just-In-Time) compilation** is a process where code is compiled into native machine code at runtime, just before it is executed. In environments like .NET, the application is initially compiled to an intermediate language (IL), and the JIT compiler translates IL to machine code as the program runs. This allows for optimizations based on the actual execution environment, but can result in slower startup times compared to AOT.
+- **Weaving** in .NET refers to the process of modifying compiled code (assemblies) after compilation, typically to inject additional behavior or logic. This is often used in aspect-oriented programming (**AOP**), where cross-cutting concerns like logging, security, or transaction management are added automatically to methods or classes without changing the original source code. Weaving can be done at build time, load time, or runtime using tools like [Fody](https://github.com/Fody/Fody) or PostSharp.
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
