@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "how-to/How to print errors in SQL execution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "How to print errors in SQL execution"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:package-management",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "general/Root Cause Analysis.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Root Cause Analysis"
+              "title": "Outline of index"
             }
           },
           {
@@ -159,6 +159,16 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
+            }
+          },
+          {
+            "id": "22e1ba40ff0d5aab",
+            "type": "leaf",
+            "state": {
+              "type": "broken-links-view",
+              "state": {},
+              "icon": "unlink",
+              "title": "Broken links"
             }
           }
         ],
@@ -181,8 +191,10 @@
   },
   "active": "d29fb8c594a694f3",
   "lastOpenFiles": [
-    "how-to/How to use variables in a TSQL query.md",
+    "Untitled.base",
+    "how-to/How to print errors in SQL execution.md",
     "index.md",
+    "how-to/How to use variables in a TSQL query.md",
     "general/Source Generator.md",
     "conflict-files-obsidian-git.md",
     "how-to/How to show query results in Azure DevOps Wiki.md",
