@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Connect Cursor to Azure DevOps for AI code reviews"
             }
           }
         ]
@@ -191,9 +191,11 @@
   },
   "active": "d29fb8c594a694f3",
   "lastOpenFiles": [
+    "Pasted image 20260223180026.png",
+    "index.md",
+    "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
     "general/Architecture Decision Matrix.md",
     "Pasted image 20251031104606.png",
-    "index.md",
     "Untitled.base",
     "Pasted image 20250625094227.png",
     "how-to/How to print errors in SQL execution.md",
