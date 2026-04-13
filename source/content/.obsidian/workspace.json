@@ -11,14 +11,14 @@
             "id": "d29fb8c594a694f3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
-                "mode": "source",
-                "source": false
+                "aFile": "source/content/how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
+                "bFile": "source/content/how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Connect Cursor to Azure DevOps for AI code reviews"
+              "icon": "diff",
+              "title": "Diff: Connect Cursor to Azure DevOps for AI code reviews"
             }
           }
         ]
@@ -191,9 +191,11 @@
   },
   "active": "d29fb8c594a694f3",
   "lastOpenFiles": [
+    "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
+    "general/Model Context Protocol.md",
+    "how-to/developer-console.png",
     "Pasted image 20260223180026.png",
     "index.md",
-    "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
     "general/Architecture Decision Matrix.md",
     "Pasted image 20251031104606.png",
     "Untitled.base",
