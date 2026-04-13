@@ -1,10 +1,31 @@
-A deeper integration with an Azure DevOps MCP server can significantly improve the shaping of agent context during its reasoning. By pulling work item metadata, the agent can drive its output to the actual intent behind each task, leading to more aligned code changes.
+---
+tags:
+  - cursor
+  - azure-devops
+  - mcp
+  - code-review
+  - ai
+  - gino
+title: Un Titolo
+---
 
-Online docs provide different MCP servers to connect to: [https://cursor.com/docs/context/mcp#servers](https://cursor.com/docs/context/mcp#servers "https://cursor.com/docs/context/mcp#servers").
+Connecting Cursor to Azure DevOps through an [[Model Context Protocol|MCP]] server gives the model structured access to work items, pull requests, and commits. That context helps the agent align suggestions with the intent behind each task instead of staying generic.
 
-Select the ADO one and click on "Add to Cursor": as a result, a new MCP server with a large set of tools will be added to "Tools & MCP section" of our Cursor's settings. We can edit the configuration of the installed MCP server to add a PAT for ADO access, this way:
+## Add the Azure DevOps MCP server
+
+1. Open Cursor’s MCP server list in the docs: [MCP servers (Cursor documentation)](https://cursor.com/docs/context/mcp#servers).
+2. Find the **Azure DevOps** entry and use **Add to Cursor** (or the equivalent control shown there).
+
+Cursor installs a server with a large set of ADO-related tools. It appears under **Settings → Tools & MCP** (labels can vary slightly by version).
+
+## Authenticate with a PAT
+
+Edit the installed server’s configuration and supply a **Personal Access Token** with scopes that match what you need (for example repositories and pull requests, work items, or both—grant only what you trust the agent to use).
+
+Create or rotate tokens in Azure DevOps from your profile → **Personal access tokens**.
 
 ![[Pasted image 20260223180026.png]]
-A PAT can be created through the "Personal access tokens" section of our ADO profile. 
 
-As a real use case, this MCP server enablement helped me aiding another developer in finding out what was the best solution to apply to a design flaw in a PR, by connecting to the ADO platform, searching for the specific pull request ID, going through the commits and understanding what was the flaw and which were the possible ways around it.
+## Example: PR design review
+
+With this enabled, I helped another developer work through a design flaw in a pull request: the agent connected to Azure DevOps, located the PR by id, walked the commits, and summarized the issue plus reasonable ways to address it.
