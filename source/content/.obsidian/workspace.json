@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "34e662f27bd0e21c",
+        "id": "a45624c81083d348",
         "type": "tabs",
         "children": [
           {
-            "id": "d29fb8c594a694f3",
+            "id": "82d90d0e61e5b326",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "source/content/how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
-                "bFile": "source/content/how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
-                "aRef": ""
+                "file": "general/Cloud Models.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Connect Cursor to Azure DevOps for AI code reviews"
+              "icon": "lucide-file",
+              "title": "Cloud Models"
             }
           }
         ]
@@ -189,14 +189,19 @@
       "broken-links:View broken links": false
     }
   },
-  "active": "d29fb8c594a694f3",
+  "active": "82d90d0e61e5b326",
   "lastOpenFiles": [
+    "general/Apache Cassandra.md",
+    "general/CPU-bound operations.md",
+    "general/Cloud Models.md",
+    "general/ARR Affinity.md",
+    "general/Architecture Decision Matrix.md",
+    "general/Architectural Risk.md",
     "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
     "general/Model Context Protocol.md",
     "how-to/developer-console.png",
     "Pasted image 20260223180026.png",
     "index.md",
-    "general/Architecture Decision Matrix.md",
     "Pasted image 20251031104606.png",
     "Untitled.base",
     "Pasted image 20250625094227.png",
@@ -213,7 +218,6 @@
     "general/Event-Driven Architecture.md",
     "general/Event Sourcing.md",
     "general/Lead smart people.md",
-    "general/Apache Cassandra.md",
     "general/Root Cause Analysis.md",
     "general/DNS.md",
     "how-to/How to print Environment Variables in a K8s Pod.md",
@@ -222,9 +226,6 @@
     "how-to/How to use Editorconfig.md",
     "how-to/How to list all the installed NuGet Packages.md",
     "how-to/How to Add Azure K8s Cluster on Lens.md",
-    "general/Software Architecture vs Software Design.md",
-    "category-folder/index.md",
-    "category-folder/Some note.md",
     "category-folder"
   ]
 }
