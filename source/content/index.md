@@ -63,4 +63,4 @@
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
 - [ ] sistema link rotti
-- [ ] i tag possono puntare alle note?
+- [ ] i tag possono puntare alle note???
