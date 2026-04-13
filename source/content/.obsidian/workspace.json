@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general/Cloud Models.md",
+                "file": "general/Event-Driven Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cloud Models"
+              "title": "Event-Driven Architecture"
             }
           }
         ]
@@ -191,9 +191,11 @@
   },
   "active": "82d90d0e61e5b326",
   "lastOpenFiles": [
-    "general/Apache Cassandra.md",
     "general/CPU-bound operations.md",
     "general/Cloud Models.md",
+    "general/Dockerfile.md",
+    "general/Dapr.md",
+    "general/Apache Cassandra.md",
     "general/ARR Affinity.md",
     "general/Architecture Decision Matrix.md",
     "general/Architectural Risk.md",
@@ -224,8 +226,6 @@
     "how-to/How to Use Husky.NET Pre-commit hooks.md",
     "how-to/How to view last executed queries in SSMS 2019.md",
     "how-to/How to use Editorconfig.md",
-    "how-to/How to list all the installed NuGet Packages.md",
-    "how-to/How to Add Azure K8s Cluster on Lens.md",
     "category-folder"
   ]
 }

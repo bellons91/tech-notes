@@ -5,6 +5,7 @@ tags:
   - cloud
   - az-900
   - architecture
+  - hybrid-cloud
 ---
 
 Cloud **deployment** models describe where infrastructure runs and how it is isolated or shared. They sit alongside **service** models ([[Infrastructure-as-a-Service]], [[Platform-as-a-Service]], [[Software-as-a-Service]]), which describe what the provider manages for you. Responsibility and control trade-offs are summarized in the [[Shared Responsibility Model]].

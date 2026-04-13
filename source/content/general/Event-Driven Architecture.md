@@ -1,15 +1,18 @@
 ---
+title: "Event-Driven Architecture"
 tags:
   - architecture
   - software-architecture
   - event-driven
   - ddd
+  - messaging
 aliases:
   - EDA
 ---
-EDA is a software architecture paradigm concerning the production and detection of events, enabling #scalability, #fault-tolerance, and #loose-coupling. 
 
-Events represent significant state changes (e.g., `OrderPaid`) and propagate through event channels (message brokers like #RabbitMQ or #Kafka).
+Event-driven architecture (EDA) is a paradigm built around the production, detection, and consumption of **events**, enabling scalability, fault tolerance, and loose coupling between producers and consumers.
+
+Events represent significant state changes (for example `OrderPaid`) and propagate through event channels such as message brokers (for example RabbitMQ or Kafka).
 
 Every event can have one or more independent consumers.
 
@@ -22,4 +25,4 @@ Every event can have one or more independent consumers.
 ## Topologies
 
 - **Broker Topology**: Simple, decentralized event broadcasting (high performance, no central control).
-- **Mediator Topology** : Central #orchestrator for complex workflows (better error handling, lower scalability).
+- **Mediator topology**: Central orchestrator for complex workflows (often stronger error handling, more coordination overhead).

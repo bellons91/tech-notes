@@ -1,10 +1,11 @@
 ---
+title: "DNS Record Types"
 tags:
   - dns
   - networking
 ---
 
-[[DNS]] record types are used to map domain names to IP addresses and other information. Here are some of the main DNS record types and their descriptions:
+[[DNS]] record types map names to addresses, services, security material, and other metadata. Common types include:
 
 ## A
 

@@ -1,7 +1,13 @@
 ---
-tags: security
+title: "Principle of Least Privilege"
+tags:
+  - security
+  - identity
+  - access-control
+  - azure
 ---
-The principle of least privilege says that **you should only grant access up to the level needed to complete a task**.
+
+The **principle of least privilege** means granting **only the access required** to complete a task—no broader roles, scopes, or durations than necessary.
 
 Suppose you only need read access to a resource. In that case, you should only be granted access to that specific resource and only for read operations.
 

@@ -1,4 +1,5 @@
 ---
+title: "Software as a Service"
 tags:
   - azure
   - cloud
@@ -7,7 +8,8 @@ tags:
 aliases:
   - SaaS
 ---
-Clients are renting fully developed applications, such as email services, messaging applications, and so on.
+
+In **SaaS**, clients use **fully managed applications** (email, CRM, ticketing, and so on) operated by the provider.
 
 SaaS is the model that places the most responsibility on the cloud provider and the least responsibility on the user.
 
@@ -17,12 +19,11 @@ Clients are responsible for:
 - connected devices
 - user policies
 
-## List of Azure Services
+## List of Azure services
 
 - Azure DevOps
-- Microsof Sentinel
+- Microsoft Sentinel
 - [[Azure Arc]]
 - [[Azure Advisor]]
 - Azure Backup
 - [[Azure Cloud Shell]]
--

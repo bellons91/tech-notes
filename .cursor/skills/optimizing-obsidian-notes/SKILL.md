@@ -92,6 +92,8 @@ Check both **wikilinks** and **Markdown** links:
 
 Output: **fixed** links inline, or a **Broken links** list with recommended target.
 
+If the broken link is a wikilink, then ask if you have to create a page for that element. If the user confirms the action, then create a new note with that name a populate it with a brief description taken from the Internet.
+
 ---
 
 ## 5. Rename file to kebab-case

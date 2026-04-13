@@ -1,13 +1,15 @@
 ---
+title: "Transport Layer Security"
 tags:
   - networking
   - security
   - certificate
+  - tls
 aliases:
   - TLS
 ---
 
-TLS stands for Transport Layer Security, a #protocol that provides secure #communication over the internet. TLS encrypts the data that is sent and received between a client and a server, preventing eavesdropping, tampering, and impersonation. 
+**TLS** (Transport Layer Security) is a protocol that provides **encrypted, authenticated** communication between clients and servers over networks such as the Internet. It protects confidentiality and integrity of data in transit and supports verifying peer identity using **X.509 certificates**. 
 
 TLS also ensures that the client and the server can verify each other's identity using digital certificates. 
 

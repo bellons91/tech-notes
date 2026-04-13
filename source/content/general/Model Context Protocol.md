@@ -1,12 +1,15 @@
 ---
+title: "Model Context Protocol"
 tags:
-  - AI
+  - ai
   - artificial-intelligence
   - protocol
   - communication
+  - mcp
 aliases:
   - MCP
 ---
+
 The Model Context Protocol (MCP) is an open standard introduced by Anthropic in 2024 to streamline how AI systems interact with external tools, data sources, and services.
 
 It simplifies integration by replacing bespoke APIs with a unified, schema-driven protocol.
@@ -16,7 +19,7 @@ MCP enables AI models to **dynamically discover, invoke, and collaborate with ex
 ## Key Components of MCP
 
 - **MCP Host**
-  - The AI system (e.g., #Claude, #OpenAI) that interacts with external tools.
+  - The AI system (for example Claude, ChatGPT, or other hosts) that interacts with external tools.
   - Responsibilities include discovering tools, interpreting manifests, constructing valid requests, and handling responses. It also manages authentication and error handling.
 - **MCP Server**
   - A service that exposes callable functions through MCP's structured manifest.

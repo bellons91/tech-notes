@@ -1,21 +1,21 @@
 ---
+title: "Shared Responsibility Model"
 tags:
   - azure
   - cloud
   - az-900
+  - security
 aliases:
   - SRM
 ---
 
-There are some responsibilities to take into account when building a server factory, such as:
+When you run workloads **on your own hardware**, you own the full stack—from physical facilities to applications—for example:
 
-- physical space (buildings, electricity, hardware)
-- maintenance
-- replacing components
-- physical security
-- network connectivity
+- Physical space (buildings, power, hardware)
+- Maintenance and component replacement
+- Physical security and network connectivity
 
-With the Shared Responsibility Model, these responsibilities get shared between the cloud provider and the consumer.
+The **shared responsibility model** describes how those duties are divided between **you** and the **cloud provider** after you adopt cloud services.
 
 Cloud providers are responsible for the infrastructure of the datacenter: physical security, cooling, building access, and maintenance.
 
@@ -27,4 +27,4 @@ Depending on the **cloud service model**, responsibilities are shared in a diffe
 
 - [[Infrastructure-as-a-Service]] places most of the responsibility on the consumer; the cloud vendor is only responsible for physical security and connectivity;
 - [[Software-as-a-Service]] places most of the responsibilities on the cloud vendor;
-- [[paas]] is in the middle.
+- [[Platform-as-a-Service]] sits in the middle.

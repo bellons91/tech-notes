@@ -1,9 +1,12 @@
 ---
+title: "Apache Cassandra"
 tags:
   - database
-  - column-schema
+  - nosql
+  - cassandra
+  - distributed-systems
 ---
 
-Data is stored in column-oriented schema.
+Apache Cassandra is a distributed NoSQL database that stores data in a **column-oriented** logical model well suited to wide partitions and high write throughput.
 
-Apache Cassandra offers a highly distributed, horizontally scaling approach to storing **large volumes of data** while offering a flexible approach to a column-oriented schema.
+It scales **horizontally** across many nodes and is often used when you need **large volumes of data**, tunable consistency, and resilience to individual node failures.

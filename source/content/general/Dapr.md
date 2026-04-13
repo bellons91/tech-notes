@@ -1,19 +1,21 @@
 ---
+title: "Dapr"
 tags:
   - dapr
-  - microservice
+  - microservices
   - sidecar
-  - message
+  - messaging
   - pub-sub
   - actors
 aliases:
   - Distributed Application Runtime
 ---
-The Distributed Application Runtime (Dapr) is a set of incrementally adoptable features that simplify the authoring of distributed, microservice-based applications.
+
+**Dapr** (Distributed Application Runtime) is a set of incrementally adoptable building blocks that simplify distributed and microservice-based applications.
 
 Dapr provides capabilities for enabling application intercommunication through messaging via pub/sub or reliable and secure service-to-service calls.
 
-Dapr is often used to implement the [[Sidecar pattern]]. The main application communicates with the sidecar via [[gRPC]] or HTTP;
+Dapr is often used to implement the [[Sidecar pattern]]. The main application communicates with the sidecar over [[gRPC]] or **HTTP**.
 
 Dapr exposes several APIs:
 

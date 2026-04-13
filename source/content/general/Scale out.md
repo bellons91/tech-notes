@@ -1,7 +1,11 @@
 ---
-tags: cloud, scaling
+title: "Scale Out"
+tags:
+  - cloud
+  - scaling
+  - horizontal-scaling
 ---
 
-**Scaling out** is the process of **increasing** the number of machine instances that are running a web app.
+**Scaling out** (horizontal scaling) **increases the number of instances** running your workload—for example more VMs or replicas behind a load balancer.
 
-Is opposed to [[Scale in]].
+Contrast with [[Scale in]].

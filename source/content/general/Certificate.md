@@ -1,9 +1,12 @@
 ---
+title: "Certificate"
 tags:
   - certificate
   - security
+  - tls
+  - pki
 ---
 
-A certificate is a digital document that contains information about the identity and validity of a website or a server.
+An **X.509 certificate** is a signed document that binds a **public key** to an identity (subject) and validity period, issued by a certificate authority (CA) you or the platform trusts.
 
-It has a public key and a private #key. This info is stored in a [[PFX file]].
+Certificates are used with TLS and other protocols. The **public** key is distributed widely; the **private** key must stay secret—often stored with the cert in a [[PFX file]] or an HSM / managed secret store.

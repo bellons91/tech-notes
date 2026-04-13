@@ -1,14 +1,16 @@
 ---
+title: "FIDO2 Authentication"
 tags:
   - az-900
   - authentication
   - security
-  - FIDO2
+  - fido2
   - identity
+  - passwordless
 ---
 
-The FIDO (Fast IDentity Online) Alliance helps to promote open authentication standards and **reduce the use of passwords as a form of authentication**. FIDO2 is the latest standard that incorporates the web authentication ([[WebAuthn]]) standard.
+The **FIDO** (Fast IDentity Online) Alliance promotes open authentication standards that **reduce reliance on passwords**. **FIDO2** pairs the **CTAP** device protocol with [[WebAuthn]] in the browser for phishing-resistant sign-in.
 
-Fast Identity Online (FIDO) is an **open standard for #passwordless authentication**.
+FIDO2 is an **open approach to passwordless** and strong second-factor authentication.
 
-These **FIDO2 security keys are typically USB devices** but could also use Bluetooth or NFC. With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.
+**FIDO2 security keys** are often USB devices; some implementations use Bluetooth or NFC. The private key material stays on the authenticator, so there is no shared password for attackers to phish or replay at scale.

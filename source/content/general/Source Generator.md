@@ -1,10 +1,15 @@
 ---
+title: "Source Generators"
 tags:
-  - codegeneration
+  - dotnet
+  - csharp
+  - roslyn
+  - code-generation
 ---
-A **SourceGenerator** in #dotnet is a feature introduced with **C# 9** and **.NET 5** that allows developers to generate additional C# source files **at compile time**. 
 
-These generators run as part of the **#Roslyn** compilation process and can inspect your code, metadata, and even external files to create new code that is then compiled together with your project. This is especially useful for scenarios like **CodeGeneration**, **boilerplate reduction**, or implementing design patterns such as **#DependencyInjection** or **serialization** automatically.
+A **source generator** in .NET is a feature introduced with **C# 9** and **.NET 5** that lets you emit additional C# source files **at compile time**.
+
+Generators run inside the **Roslyn** compilation pipeline. They can inspect syntax, semantics, and additional files, then contribute generated code into the same compilation. Typical uses include reducing boilerplate, generating DTOs or serializers, and wiring **dependency injection** registrations.
 
 ### How Source Generators Work
 

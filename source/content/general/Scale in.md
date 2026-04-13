@@ -1,7 +1,11 @@
 ---
-tags: cloud, scaling
+title: "Scale In"
+tags:
+  - cloud
+  - scaling
+  - horizontal-scaling
 ---
 
-**Scaling in** is the process of **decreasing** the number of machine instances that are running a web app.
+**Scaling in** **reduces the number of instances** running your workload while keeping the service online (often paired with autoscale rules).
 
-Is opposed to [[Scale out]].
+Contrast with [[Scale out]].

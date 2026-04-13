@@ -1,11 +1,13 @@
 ---
+title: "DNS"
 tags:
   - dns
   - networking
 ---
-DNS stands for **Domain Name System**, which is the phonebook of the Internet. It is a #network service that converts between human-readable domain names (such as `www.example.com`) and machine-friendly IP addresses (such as 192.168.1.1) that browsers use to load web pages.
 
-DNS works by following a series of steps to translate a domain name into an #IP address. When a user types a domain name into their web browser, a DNS query is sent to a DNS server, which is a computer that stores a database of domain names and their corresponding IP addresses. The DNS server then performs a lookup process to find the right IP address for the domain name.
+**DNS** (Domain Name System) maps human-readable names (such as `www.example.com`) to addresses and other records that clients and servers use on the network. It is often described as the Internet’s **phonebook**.
+
+Resolvers follow a chain of lookups to translate a name into the records needed to reach a host (commonly **A** or **AAAA** records for IP addresses). When a user types a domain name into their web browser, a DNS query is sent to a DNS server, which is a computer that stores a database of domain names and their corresponding IP addresses. The DNS server then performs a lookup process to find the right IP address for the domain name.
 
 The lookup process involves four types of DNS servers:
 
@@ -16,4 +18,4 @@ The lookup process involves four types of DNS servers:
 
 The DNS recursor initiates the lookup process by sending a query to one of the root nameservers, which responds with a list of TLD nameservers for the requested TLD. The DNS recursor then sends another query to one of the TLD nameservers, which responds with a list of authoritative nameservers for the requested SLD. The DNS recursor then sends a final query to one of the authoritative nameservers, which responds with the IP address of the requested domain name. The DNS recursor then returns this IP address to the user's device, which can then use it to access the web page.
 
-DNS is an essential component of the Internet, as it allows users to access websites using easy-to-remember domain names instead of complex IP addresses. It also enables website owners to change their IP addresses without affecting their users, as they only need to update their authoritative nameservers with the new IP address . Additionally, DNS can provide other functions such as load balancing, security, and content delivery.
+DNS is an essential component of the Internet, as it allows users to access websites using easy-to-remember domain names instead of complex IP addresses. It also enables website owners to change their IP addresses without affecting their users, as they only need to update their authoritative nameservers with the new IP address . Additionally, DNS can support load balancing, security policies, and traffic steering for content delivery.

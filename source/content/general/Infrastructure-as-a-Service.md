@@ -1,4 +1,5 @@
 ---
+title: "Infrastructure as a Service"
 tags:
   - azure
   - cloud
@@ -7,7 +8,8 @@ tags:
 aliases:
   - IaaS
 ---
-The cloud provider is responsible for
+
+In **IaaS**, the cloud provider is responsible for
 
 - maintaining the hardware
 - network connectivity (to the internet), and

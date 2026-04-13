@@ -1,16 +1,18 @@
 ---
+title: "Event Sourcing"
 tags:
   - storage
   - software-architecture
   - data
   - database
+  - event-sourcing
 ---
-Event Sourcing focuses on persisting application state by storing every change as an **immutable** event. 
 
-Unlike [[Event-Driven Architecture]], it operates at the application level, not between services.
+Event Sourcing persists application state by storing every change as an **immutable** event. Unlike [[Event-Driven Architecture]], which often spans services and integration boundaries, event sourcing is primarily an **application-level** state model.
 
+## Core ideas
 
-- **Immutable Event Log** : Every state change is captured as a sequence of events (e.g., `ItemAddedToCart`, `PaymentProcessed`).
-- **Replayable History**: Applications can reconstruct state by replaying events, enabling:
-	- Temporal Queries: Audit past states (e.g., “What was the order status on 2023–01–01?”).
-	- Retroactive Adjustments: Fix errors by reversing incorrect events and replaying corrected ones.
+- **Immutable event log**: Every state change is captured as a sequence of events (for example `ItemAddedToCart`, `PaymentProcessed`).
+- **Replayable history**: Applications can reconstruct state by replaying events, enabling:
+  - **Temporal queries**: Audit past states (for example “What was the order status on 2023-01-01?”).
+  - **Retroactive adjustments**: Correct errors by appending compensating events and replaying with updated logic where appropriate.

@@ -1,8 +1,13 @@
 ---
-tags: architecture
+title: "Sidecar Pattern"
+tags:
+  - architecture
+  - microservices
+  - kubernetes
+  - sidecar
 ---
 
-Sidecar pattern is an architectural design where you add a service that runs in the background and performs some operations, removing the computational weight from the main application.
+The **sidecar** pattern pairs a main application with a **collocated helper process** (often in the same pod on Kubernetes) that handles cross-cutting concerns such as proxies, telemetry, secrets, or sync, so the primary service stays focused on business logic.
 
 Examples of sidecar containers include:
 

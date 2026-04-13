@@ -1,10 +1,15 @@
 ---
+title: "Platform as a Service"
 tags:
   - cloud
+  - paas
+  - azure
+  - az-900
 aliases:
   - PaaS
 ---
-The cloud provider maintains:
+
+In the **PaaS** model, the cloud provider maintains:
 
 - physical infrastructure
 - physical security

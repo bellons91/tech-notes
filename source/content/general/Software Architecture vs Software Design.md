@@ -1,11 +1,14 @@
 ---
+title: "Software Architecture vs Software Design"
 tags:
   - software-architecture
   - software-design
   - career
 ---
 
-## What is Software Architecture
+This note contrasts **architecture** (system-wide structure and constraints) with **design** (how individual parts are implemented).
+
+## What is software architecture
 
 In software, architecture is the strategic blueprint:
 
@@ -14,7 +17,7 @@ In software, architecture is the strategic blueprint:
 - What technologies and tools will be used?
 - What qualities must the system uphold (scalability, availability, etc.)?
 
-### Core Responsibilities of Architecture:
+### Core responsibilities of architecture
 
 - **High-Level Structure**: Breaks the system into services, layers, or modules
 - **Integration Strategy**: Defines communication between components (e.g., APIs, events, queues)
@@ -23,7 +26,7 @@ In software, architecture is the strategic blueprint:
 - **Risk Management**: Mitigates long-term complexity and cost
 
 
-## What is Software Design
+## What is software design
 
 Design is the detailed approach for implementing each part of the system:
 
@@ -33,7 +36,7 @@ Design is the detailed approach for implementing each part of the system:
 - How do we keep the code clean and testable?
 
 
-### Core Responsibilities of Design
+### Core responsibilities of design
 
 - **Implementation Strategy**: Plans out how features or modules will work internally
 - **Code Structure**: Applies principles like abstraction, encapsulation, and responsibility

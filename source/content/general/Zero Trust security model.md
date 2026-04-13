@@ -1,8 +1,13 @@
 ---
-tags: security, authentication
+title: "Zero Trust Security Model"
+tags:
+  - security
+  - authentication
+  - zero-trust
+  - identity
 ---
 
-Zero Trust is a security model that **assumes the worst-case scenario** and protects resources with that expectation. Zero Trust assumes breach at the outset and then verifies each request as though it originated from an uncontrolled network.
+**Zero Trust** is a security model that **assumes breach** and protects resources accordingly: every access request is explicitly verified, regardless of where it comes from.
 
 Three principles:
 

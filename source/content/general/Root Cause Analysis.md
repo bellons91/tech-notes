@@ -1,16 +1,21 @@
 ---
+title: "Root Cause Analysis"
 aliases:
   - RCA
 tags:
   - incident
+  - postmortem
+  - sre
+  - operations
 ---
-A Root Cause Analysis (RCA) is a structured document that answers:
+
+A **root cause analysis** (RCA) is a structured document that answers:
 
 - What happened?
 - Why did it happen?
 - What can we do to prevent it in the future?
 
-A valid RCA document contains the following section:
+A useful RCA usually contains the following sections:
 
 ## Summary
 
@@ -43,7 +48,7 @@ Explain the **user and business impact**:
 
 Build a timeline with exact timestamps and key events.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*WIiC7NH2wSBHhYt1zBlmCw.png)
+![Timeline example](https://miro.medium.com/v2/resize:fit:875/1*WIiC7NH2wSBHhYt1zBlmCw.png)
 
 Tips:
 

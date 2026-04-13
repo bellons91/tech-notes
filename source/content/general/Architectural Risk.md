@@ -1,12 +1,13 @@
 ---
+title: "Architectural Risk"
 tags:
   - software-architecture
-  - soft-skills
+  - leadership
   - risk
+  - project-management
 ---
 
-
-Every project has its share of risks that can impact its success or its failure.
+Every project faces **risks** that can affect outcomes. Part of the architect’s job is to surface those risks early and help the organization decide how to respond.
 
 Knowing what they are and how we can handle them is one of the roles of a good software architect.
 
@@ -16,7 +17,7 @@ What kind of risks do we have to deal with?
 
 ### Functional risk
 
-It raises when the **requirements are not correct or not clear**, and it is usually caused by the lack of communication between stakeholders (business analysts, management, end-users).
+It **arises** when **requirements are incorrect or unclear**, often from weak communication between stakeholders (business analysts, management, end users).
 
 ### Management risk
 
@@ -70,7 +71,7 @@ We have 4 strategies:
 
 Some risks can be simply accepted: it's a bet on the success of the project.
 
-I.E. you can decide to publish your project earlier to be more competitive on the market - but sacrificing project quality.
+For example, you might ship earlier to compete in the market while accepting lower quality or higher operational risk.
 
 ### Mitigate it
 

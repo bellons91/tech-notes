@@ -1,6 +1,11 @@
 ---
-tags: cloud, scaling
+title: "Scale Down"
+tags:
+  - cloud
+  - scaling
+  - vertical-scaling
 ---
-**Scaling down** is the process of de-provisioning resources, such as the number of cores or the amount of RAM available.
 
-Is opposed to [[Scale up]].
+**Scaling down** removes capacity from **existing** instances—for example fewer vCPUs or less RAM per machine.
+
+Contrast with [[Scale up]].

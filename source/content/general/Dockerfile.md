@@ -1,17 +1,19 @@
 ---
+title: "Dockerfile"
 tags:
   - docker
   - containers
+  - devops
 ---
 
-A Dockerfile is a script that contains a series of instructions that are used to build a [[Docker]] image.
+A **Dockerfile** is a text recipe of instructions that [[Docker]] (or another OCI-compatible builder) uses to assemble a **container image**.
 
 Dockerfiles typically include the following information:
 
 - The **base or parent image** we use to create the new image
 - Commands to update the base OS and install other software
 - Build artifacts to include, such as a developed application
-- Services to expose, such a storage and network configuration
+- Services to expose, such as storage and network configuration
 - **Command to run** when the container is launched
 
 Here's an example of a Dockerfile to build a .NET application:
@@ -43,6 +45,6 @@ In particular:
 
 `EXPOSE 80`: it opens the port 80 to the external world. When you run a container using this image, you have to ensure that you are accessing this _internal_ port.
 
-`CMD ["dotnet", "MyApp.dll"]`: this is the command to run when the container starts. In this case, we are running the `dotnet` command with the name of the app's [[DLL]].
+`CMD ["dotnet", "MyApp.dll"]`: this is the command to run when the container starts—in this case launching the published `MyApp.dll` assembly with the `dotnet` host.
 
 Read more [here](https://docs.docker.com/engine/reference/builder/).

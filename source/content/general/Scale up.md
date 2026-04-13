@@ -1,7 +1,11 @@
 ---
-tags: cloud, scaling
+title: "Scale Up"
+tags:
+  - cloud
+  - scaling
+  - vertical-scaling
 ---
 
-**Scaling up** is the process of adding resources, such as the number of cores or the amount of RAM available.
+**Scaling up** (vertical scaling) adds capacity to **existing** instances—for example more CPU or RAM per machine.
 
-Is opposed to [[Scale down]].
+Contrast with [[Scale down]].

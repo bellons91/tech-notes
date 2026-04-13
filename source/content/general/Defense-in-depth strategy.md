@@ -1,5 +1,9 @@
 ---
-tags: security, authentication
+title: "Defense in Depth Strategy"
+tags:
+  - security
+  - authentication
+  - defense-in-depth
 ---
 
 The objective of defense-in-depth is to **protect information and prevent it from being stolen** by those who aren't authorized to access it.
@@ -34,7 +38,7 @@ At this layer, it's important to:
 
 ## Perimeter
 
-Protects from network-based attacks against your resource, such as [[DDoS]] attacks and other malicious attacks.
+Protects from network-based attacks against your resource, such as [[DDoS]] attacks and other malicious traffic.
 
 It uses a DDoS filter and other technologies, such as a [[firewall]].
 

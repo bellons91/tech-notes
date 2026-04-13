@@ -1,10 +1,10 @@
 ---
+title: "ZenMap"
 tags:
   - security
   - tools
   - networking
+  - nmap
 ---
 
-[ZenMap](https://nmap.org/zenmap/) is a free, opensource, tool that allows for _port scanning_.
-
-You specify a set of IPs and it shows you the list of open ports. You can look for suspect activities.
+[ZenMap](https://nmap.org/zenmap/) is the official graphical front end for **Nmap**. It helps you run scans against hosts or networks and review open ports, services, and basic fingerprinting in a visual layout—useful for reconnaissance and spot-checking unexpected exposure.

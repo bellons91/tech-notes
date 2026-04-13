@@ -1,10 +1,17 @@
 ---
+title: "Architecture Decision Matrix"
 tags:
   - software-architecture
   - decisions
+  - prioritization
 ---
 
-Before creating the decision matrix, you have to identify the decision to be made. Clearly define the problem or decision context. Understand what you are trying to achieve and the importance of the decision.
+A **decision matrix** scores options against weighted criteria so you can compare alternatives systematically (for example picking a UI framework or a messaging technology).
+
+Before you build the matrix, identify the decision to be made: define the problem, the stakeholders, and what “success” looks like.
+
+## Frame the decision
+
 - _Define the Problem:_ Clearly articulate the decision you need to make. For example, if you’re selecting a JavaScript UI framework, your problem statement might be “Choose the most suitable JavaScript UI framework for our new web application.”
 - _Understand Objectives:_ Identify what you want to achieve with this decision. This could include improving performance, enhancing user experience, or reducing development time.
 
