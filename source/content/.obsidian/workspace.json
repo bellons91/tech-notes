@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "general/Event-Driven Architecture.md",
+                "file": "general/OpenID Connect.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Event-Driven Architecture"
+              "title": "OpenID Connect"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "openI",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -172,11 +173,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 577.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,6 +192,17 @@
   },
   "active": "82d90d0e61e5b326",
   "lastOpenFiles": [
+    "azure/Azure App Service/Azure App Service Authentication and Authorization.md",
+    "general/OpenID Connect.md",
+    "general/OAuth 2.0.md",
+    "how-to/How to generate and save the Bearer token in Postman.md",
+    "azure/Microsoft Defender for Cloud.md",
+    "azure/Azure Virtual Network.md",
+    "azure/Azure DNS.md",
+    "azure/Azure Authentication/Application Object.md",
+    "azure/Azure App Service/Azure App Service Autoscale.md",
+    "scale-in.md",
+    "general/Event-Driven Architecture.md",
     "general/CPU-bound operations.md",
     "general/Cloud Models.md",
     "general/Dockerfile.md",
@@ -211,21 +223,10 @@
     "how-to/How to use variables in a TSQL query.md",
     "general/Source Generator.md",
     "conflict-files-obsidian-git.md",
-    "how-to/How to show query results in Azure DevOps Wiki.md",
     "Pasted image 20250625094153.png",
     "Pasted image 20250625093926.png",
     "Pasted image 20250625093835.png",
     "Pasted image 20250625093813.png",
-    "general/Runtime Time Assembly.md",
-    "general/Event-Driven Architecture.md",
-    "general/Event Sourcing.md",
-    "general/Lead smart people.md",
-    "general/Root Cause Analysis.md",
-    "general/DNS.md",
-    "how-to/How to print Environment Variables in a K8s Pod.md",
-    "how-to/How to Use Husky.NET Pre-commit hooks.md",
-    "how-to/How to view last executed queries in SSMS 2019.md",
-    "how-to/How to use Editorconfig.md",
     "category-folder"
   ]
 }

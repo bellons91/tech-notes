@@ -9,7 +9,7 @@ tags:
 
 Autoscaling is a cloud system or process that adjusts available resources based on the current demand.
 
-Autoscaling performs [[scale-in]] and [[scale-out]] as opposed to [[scale-up]] and [[scale-down]].
+Autoscaling performs [[Scale in]] and [[Scale out]] as opposed to [[Scale up]] and [[Scale down]].
 
 Autoscaling can be triggered according to a schedule or by assessing whether the system is running short on resources.
 
