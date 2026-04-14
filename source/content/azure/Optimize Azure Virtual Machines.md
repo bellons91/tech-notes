@@ -1,17 +1,27 @@
 ---
-tags: azure, az-900, cost-optimization, virtual-machines
+title: "Optimize Azure Virtual Machines"
+tags:
+  - azure
+  - az-900
+  - cost-optimization
+  - virtual-machines
 ---
 
-Depending on the average usage of resources, you can understand if you are wasting your [[Azure Virtual Machines]] resources and expenses or if you are OK.
+# Optimize Azure Virtual Machines
 
-If the average usage is **< 10%** of the possible capacity, you are wasting resources.
+Use average resource utilization to judge whether [[Azure Virtual Machines]] are **oversized** (waste and cost), **right-sized**, or **undersized** (risk of saturation).
 
-If the usage is **~90%**, you are using your resources in the best way possible.
+## Utilization heuristics
 
-If the usage is **> 90%**, you risk having performance issues because all the resources are being used, and there are no more resources available to handle sudden usage peeks.
+| Average usage | Interpretation |
+|---------------|------------------|
+| **Below ~10%** of provisioned capacity | Likely waste; consider smaller SKUs, fewer VMs, or consolidation. |
+| **Around ~90%** | Often a healthy steady state if headroom still handles bursts. |
+| **Above ~90%** sustained | Risk of performance issues; spikes may queue or fail when the VM is fully busy. |
 
-If you notice that you are using too many (or too few) resources, you might need to adjust the [[Virtual Machines size]].
+If utilization is consistently too high or too low, adjust [[Virtual Machines size]] or architecture (for example scale out).
 
-You can use **[[Azure Advisor]]**, a tool that analyzes the usage of a VM for 14 days and gives you hints on how to optimize it. For example, if the **CPU usage is <5% or the network usage is < 7MB, the VM is underutilized**, so you can remove it or use a smaller tier.
+## Tools and purchasing options
 
-You can use **Azure Reserved Instances**: instead of paying for every single VM and having to control the size for each of them, you can **buy upfront** the capacity for 1 or 3 years of resources and share the computational power between all your VMs.
+- **[[Azure Advisor]]** analyzes VM usage over about **14 days** and surfaces recommendations. Example thresholds sometimes used as rules of thumb: **CPU under ~5%** or **network under ~7 MB/s** can indicate an **underutilized** VM where downsizing or removal may save cost.
+- **Azure Reserved Virtual Machine Instances**: commit to **one- or three-year** capacity for a discount compared to pay-as-you-go list pricing for eligible VM families and regions (share benefits across matching usage in your billing scope per your reservation configuration).
