@@ -4,7 +4,7 @@
 - **Hammering**: hacking technique. Hackers send continuous push notifications until the victim, annoyed by these notifications, accepts one and gives permissions to the intruder;
 - **Adversary-in-the-middle**: deceive users;
 - **Fitness Functions**: functions that check the -ilities of the architecture. You use metrics and monitors;
-- **ArchUnitNET**: library for testing the code architecture. You can validate the modules dependencies;
+- [[ArchUnit.NET]]: library for testing the code architecture. You can validate module dependencies (see also [[Architectural Tests]]);
 - **JIT** (Just-in-time compilation): compiles the code on the fly; it compiles the code that you are going to execute;
 - **OSR** (On-stack replacement): used to optimize methods with long runs. If during the first executions it finds something to optimize, it replaces the low-level code on the stack;
 - **Dynamic PGO**: the Jitter understands the code usage and optimizes the compilation;
