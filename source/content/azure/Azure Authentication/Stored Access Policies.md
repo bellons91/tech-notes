@@ -1,21 +1,25 @@
 ---
+title: "Stored Access Policies"
 tags:
   - az-204
   - authentication
   - shared-access-signature
   - sas
-  - MicrosoftEntra
+  - microsoft-entra
+  - azure-storage
 ---
+
+# Stored Access Policies
 
 A stored access policy provides an extra level of control over service-level [[Shared Access Signatures]] on the server side.
 
-With stored access policy you can group [[SAS]] and provides more restrictions for signatures that bound by the policy.
+With a stored access policy, you can group SAS tokens that are bound to the policy and apply stronger or more centralized restrictions on those signatures.
 
 You can use a stored access policy to change the start time, expiry time, or permissions for a signature, or to revoke it after it is issued.
 
-Stored Access Policies are supported by [[Blob containers]], [[File shares]], [[Queues]], [[Tables]].
+Stored access policies are supported by [[Blob containers]], [[File shares]], [[Queues]], and [[Tables]].
 
-To create or modify a stored access policy, call the Set #ACL operation for the resource (see Set Container ACL, Set Queue ACL, Set Table ACL, or Set Share ACL) with a request body that specifies the terms of the access policy. The body of the request includes a unique signed identifier of your choosing, up to 64 characters in length, and the optional parameters of the access policy.
+To create or modify a stored access policy, call the Set ACL operation for the resource (see Set Container ACL, Set Queue ACL, Set Table ACL, or Set Share ACL) with a request body that specifies the terms of the access policy. The body of the request includes a unique signed identifier of your choosing, up to 64 characters in length, and the optional parameters of the access policy.
 
 ```cs
 BlobSignedIdentifier identifier = new BlobSignedIdentifier

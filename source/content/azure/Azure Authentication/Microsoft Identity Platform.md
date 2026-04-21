@@ -1,27 +1,32 @@
 ---
+title: "Microsoft Identity Platform"
 tags:
   - azure
   - az-204
   - authentication
-  - MicrosoftEntra
+  - microsoft-entra
+  - oauth2
+  - openid-connect
 ---
 
- The Microsoft identity platform for developers is a set of tools that includes #authentication service, open-source libraries, and application management tools.
+# Microsoft Identity Platform
 
-It allows to use social accounts of Microsoft Identities to log in to your application, APIs, or [[Microsoft Graph API]].
+The Microsoft identity platform for developers is a set of tools that includes an authentication service, open-source libraries, and application management tools.
+
+It lets you use Microsoft identities (work, school, and personal accounts) to sign in to your application, APIs, or [[Microsoft Graph API]].
 
 Microsoft Identity Platform is made of different components:
 
 - [[OAuth 2.0]] and [[OpenId Connect]] compliant authentication services, used to integrate several identity types, such as
-  - work or school accounts, provisioned though [[Azure Entra]];
-  - personal accounts
-  - social logins, using [[azure-ad-b2c]]
-- Open-source libraries, such as [[Microsoft Authentication Library]], and other standard-compliant libraries;
+  - work or school accounts, provisioned through [[Azure Entra]];
+  - personal accounts;
+  - social and external consumer sign-in flows, using [[Azure Entra External Identities]].
+- Open-source libraries, such as [[Microsoft Authentication Library]], and other standards-compliant libraries;
 - Microsoft identity platform endpoints;
 - Application management portal;
 - Application configuration via APIs and PowerShell.
 
-You can use it to define #passwordless authentication and [[Conditional Access]].
+You can use it to define passwordless authentication and [[Conditional Access]].
 
 Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or application ID URI. For example:
 
@@ -41,5 +46,5 @@ When using OAuth 2.0, you can define two types of OAuth permissions:
 Applications in Microsoft identity platform rely on consent in order to gain access to necessary resources or APIs. There are many kinds of consent that your app may need to know about in order to be successful.
 
 - **Static user consent**: you must specify all the permissions it needs in the app's configuration in the Azure portal. Static permissions also enable administrators to consent on behalf of all users in the organization.
-- **Incremental and dynamic user consent**: You can ask for a minimum set of permissions upfront and request more over time as the customer uses more app features. To do so, you can specify the scopes your app needs at any time by including the new scopes in the scope parameter when requesting an access token - without the need to predefine them in the application registration information.
+- **Incremental and dynamic user consent**: You can ask for a minimum set of permissions upfront and request more over time as the customer uses more app features. To do so, you can specify the scopes your app needs at any time by including the new scopes in the scope parameter when requesting an access token—without the need to predefine them in the application registration information.
 - **Admin consent**: Admin consent is required when your app needs access to certain high-privilege permissions. Admin consent ensures that administrators have some other controls before authorizing apps or users to access highly privileged data from the organization.

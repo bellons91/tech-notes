@@ -1,13 +1,17 @@
 ---
+title: "Microsoft Entra Tenant"
 tags:
   - az-204
   - azure
-  - MicrosoftEntra
+  - microsoft-entra
+  - tenant
 ---
 
-To delegate Identity and Access Management functions to Microsoft Entra ID, an application must be registered with a #MicrosoftEntra tenant.
+# Microsoft Entra Tenant
 
-When you register an app in the Azure portal, you choose whether it is **Single tenant** (only accessible in your tenant) or **Multi-tenant** (accessible in other tenants).
+To delegate identity and access management functions to Microsoft Entra ID, an application must be registered with a Microsoft Entra tenant.
+
+When you register an app in the Azure portal, you choose whether it is **single-tenant** (only accessible in your tenant) or **multi-tenant** (accessible in other tenants).
 
 If you register an application in the portal, an [[Application Object]] (the globally unique instance of the app) and a [[Service Principal]] object are automatically created in your home tenant.
 

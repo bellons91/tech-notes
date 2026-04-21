@@ -1,11 +1,14 @@
 ---
+title: "Application Object"
 tags:
   - az-204
   - azure
   - authentication
-  - entra-id
-  - MicrosoftEntra
+  - microsoft-entra
+  - app-registration
 ---
+
+# Application Object
 
 Application objects describe the application to [[Azure Entra|Microsoft Entra ID]] and can be considered the definition of the application, allowing the service to know how to issue tokens to the application based on its settings.
 
@@ -29,13 +32,13 @@ An application object is used as a template or blueprint to create one or more [
 
 The application object describes three aspects of an application:
 
-1. How the service can issue #tokens in order to access the application.
+1. How the service can issue tokens in order to access the application.
 2. What are the resources that the application might need to access.
 3. Which are the actions that the application can take.
 
-The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific #tenant. The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
+The application object is the global representation of your application for use across all tenants, and the service principal is the local representation for use in a specific tenant. The application object serves as the template from which common and default properties are derived for use in creating corresponding service principal objects.
 
 An application object has:
 
-- A one to one relationship with the software application, and
-- A one to many relationships with its corresponding service principal object(s).
+- A one-to-one relationship with the software application, and
+- A one-to-many relationship with its corresponding service principal object(s).
