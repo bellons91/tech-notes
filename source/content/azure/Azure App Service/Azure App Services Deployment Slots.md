@@ -1,6 +1,15 @@
 ---
-tags: azure, cloud, az-204, azure-app-services, deployment-slots
+title: "Azure App Services Deployment Slots"
+tags:
+  - azure
+  - cloud
+  - az-204
+  - azure-app-service
+  - deployment-slots
+  - cicd
 ---
+
+# Azure App Services Deployment Slots
 
 When you deploy your web app, you can use a separate deployment slot instead of the default production slot when running in the **Standard, Premium, or Isolated App Service Plan tier**.
 
@@ -59,7 +68,7 @@ You can make one setting stick to a specific slot by editing the _Deployment slo
 
 You can make all settings (except for the ones related to Managed Identity) swappable by setting the `WEBSITE_OVERRIDE_PRESERVE_DEFAULT_STICKY_SLOT_SETTINGS` to `0` or `false`. Every setting then becomes swappable.
 
-## How to swap Deployment slots
+## How to swap deployment slots
 
 ### Manual swap
 
@@ -96,7 +105,7 @@ To specify which pages to call, you must edit the `applicationInitialization` no
 </system.webServer>
 ```
 
-You can also customize the warm-up behaviour with one or more of the following _app settings_:
+You can also customize the warm-up behavior with one or more of the following _app settings_:
 
 - `WEBSITE_SWAP_WARMUP_PING_PATH`: The path to ping to warm up your site. Add this app setting by specifying a custom path that begins with a slash as the value. An example is `/statuscheck`. The default value is `/`.
 - `WEBSITE_SWAP_WARMUP_PING_STATUSES`: Valid HTTP response codes for the warm-up operation. Add this app setting with a comma-separated list of HTTP codes. An example is 200,202 . If the returned status code isn't in the list, the warm-up and swap operations are stopped. **By default, all response codes are valid.**
@@ -108,7 +117,7 @@ By default, all client requests to the app's production URL (`http://<app_name>.
 
 **You can route a portion of the traffic to another slot**. This feature is useful if you need user feedback for a new update but you're not ready to release it to production.
 
-You can define the percentage of clients to use the new slot by navigating under the Deployment Stots settings: you can go to the **Traffic %** column and specify the percentage of traffic you want to route.
+You can define the percentage of clients to use the new slot by navigating under the Deployment slots settings: you can go to the **Traffic %** column and specify the percentage of traffic you want to route.
 
 **Random** users are routed. Still, when a client is routed to a specific slot, it's pinned to that slot for the rest of the client session, thanks to the usage of the `x-ms-routing-name` cookie.
 
@@ -119,3 +128,9 @@ If the client is pointing to the production slot, the cookie name will be `x-ms-
 If you want users to move from one app slot to another, you can append in the query string the value of the cookie: `<webappname>.azurewebsites.net/?x-ms-routing-name=staging`.
 
 By default, new slots are given a routing rule of 0%.
+
+## See also
+
+- [[Azure App Service]]
+- [[Azure App Service Plan]]
+- [[Configuring Azure App Services]]

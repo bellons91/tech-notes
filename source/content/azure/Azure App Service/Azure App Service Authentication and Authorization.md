@@ -1,12 +1,21 @@
 ---
-tags: azure, cloud, az-204, authentication, authorization, azure-app-services
+title: "Azure App Service Authentication and Authorization"
+tags:
+  - azure
+  - cloud
+  - az-204
+  - authentication
+  - authorization
+  - azure-app-service
 ---
 
-The built-in authentication feature for App Service provides out-of-the-box authentication with #federated identity providers (a third-party identity provider manages the user identities and authentication flow for you).
+# Azure App Service Authentication and Authorization
 
-Azure App Service allows you to integrate various auth capabilities into your web app or API without implementing them yourself.
+The built-in authentication feature for App Service provides out-of-the-box authentication with federated identity providers (a third-party identity provider manages the user identities and authentication flow for you).
 
-It’s built directly into the platform and **doesn’t require any particular language**, SDK, security expertise, or code.
+[[Azure App Service]] allows you to integrate various auth capabilities into your web app or API without implementing them yourself.
+
+It's built directly into the platform and **doesn't require any particular language**, SDK, security expertise, or code.
 
 You can **integrate with multiple login providers**. For example:
 
@@ -68,7 +77,7 @@ Steps are:
 
 You can configure App Services to act in two ways when a request is not authenticated:
 
-- **Allow unauthenticated requests**: this options **defers authentication to the application code**. It gives flexibility in handling anonymous requests. It lets you present **multiple sign-in providers to your users**.
+- **Allow unauthenticated requests**: this option **defers authentication to the application code**. It gives flexibility in handling anonymous requests. It lets you present **multiple sign-in providers to your users**.
 - **Require authentication**: This option rejects any unauthenticated traffic to your application. Two possible behaviors: 1. If the application is browser-based, this rejection can be a redirect action to one of the configured identity providers. 2. If the application is a mobile app, it returns a HTTP 401 or HTTP 403 response.
 
 ## Token store
@@ -81,4 +90,9 @@ If you enable application logging, **authentication and authorization traces are
 
 ## External links
 
-🔗 [Authentication and authorization in Azure App Service and Azure Functions](https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization)
+[Authentication and authorization in Azure App Service and Azure Functions](https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization)
+
+## See also
+
+- [[Azure App Service on Linux]]
+- [[Configuring Azure App Services]]

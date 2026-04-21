@@ -1,10 +1,15 @@
 ---
+title: "Multitenant App Service Networking"
 tags:
   - azure
   - cloud
   - az-204
-  - azure-app-services
+  - azure-app-service
+  - networking
+  - vnet
 ---
+
+# Multitenant App Service Networking
 
 The roles that handle incoming HTTP or HTTPS requests are called **front ends**.
 
@@ -40,9 +45,9 @@ There are three groups:
 - PremiumV2
 - PremiumV3
 
-The outbound addresses used by your app for making outbound calls are listed in the properties for your app. These addresses are shared by all the apps running on the same worker VM family in the App Service deployment
+The outbound addresses used by your app for making outbound calls are listed in the properties for your app. These addresses are shared by all the apps running on the same worker VM family in the App Service deployment.
 
-You can see the list of outbound addresses available for your Scale unit by accessing a property named `possibleOutboundIpAddresses`.
+You can see the list of outbound addresses available for your scale unit by accessing a property named `possibleOutboundIpAddresses`.
 
 Using the CLI, you can see:
 
@@ -50,3 +55,8 @@ Using the CLI, you can see:
 - the list of all possible outbound addresses for your app, regardless of the pricing tier.
 
 See [[Azure App Service Scripts#List available outbound addresses]].
+
+## See also
+
+- [[Azure App Service]]
+- [[Configuring Azure App Services]]

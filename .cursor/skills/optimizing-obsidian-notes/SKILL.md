@@ -22,9 +22,7 @@ Copy into todos when optimizing multiple notes:
 - [ ] Frontmatter complete (`title`, `tags`, plus any project-required keys)
 - [ ] Body edited for clarity and structure (minimal rewrite)
 - [ ] Suggestions delivered (structure, inline tags, crosslinks)
-- [ ] Broken links checked and fixed or listed
 - [ ] Filename kebab-case (if renaming)
-- [ ] Inbound links updated (wikilinks + Markdown + embeds)
 - [ ] Content correctness, ensuring info is up to date
 
 ---
@@ -62,7 +60,6 @@ Adjust to vault style:
 
 - One clear **H1** (or follow vault rule if H1 is reserved for Quartz layout).
 - Logical **H2/H3** sections; move long command blocks under “Commands” or “Examples”.
-- Short **intro sentence** stating what the reader will do.
 - Fix **obvious** formatting: fenced languages on code blocks, spacing around lists, broken fences.
 - Preserve tone and technical intent; do not paste unverified facts.
 
@@ -78,25 +75,8 @@ After edits (or in the PR/chat message), provide a compact **Suggestions** secti
 
 ---
 
-## 4. Broken links
 
-Check both **wikilinks** and **Markdown** links:
-
-- `[[Some Note]]`, `[[folder/Some Note.md|alias]]`, `![[embed]]`
-- `[text](../path/file.md)` and site-relative `/` links if used
-
-**Method (pick what fits the environment):**
-
-- Search the vault for each distinct link target; confirm a matching `.md` (or configured extension) exists after applying Quartz/Obsidian path rules.
-- Flag **ambiguous** targets (multiple matches); prefer explicit paths if the vault allows.
-
-Output: **fixed** links inline, or a **Broken links** list with recommended target.
-
-If the broken link is a wikilink, then ask if you have to create a page for that element. If the user confirms the action, then create a new note with that name a populate it with a brief description taken from the Internet. It may happen that the page actually exists, but you did not notice. Check with the user what they want to do with the broken wikilink (but do it at the end of the optimization).
-
----
-
-## 5. Rename file to kebab-case
+## 4. Rename file to kebab-case
 
 - **Filename**: lower case, words separated by `-`, only safe characters (`[a-z0-9-]` plus allowed Unicode if the vault already uses it—default ASCII kebab).
 - **Page title**: stays **Title Case** in `title:` and typically the H1.
@@ -107,26 +87,6 @@ If the broken link is a wikilink, then ask if you have to create a page for that
 - From: `Azure Storage Scripts.md`
 - To: `azure-storage-scripts.md`
 - Frontmatter: `title: "Azure Storage Scripts"`
-
----
-
-## 6. Update inbound references after rename
-
-When the filename or path changes, search the **entire vault root** for references to the old name:
-
-- Old basename without extension in wikilinks: `[[Azure Storage Scripts]]`
-- Old path segments in Markdown links
-- Query params or anchors if present
-
-Replace with the **new** wikilink or path. Re-run the **broken links** pass on edited files.
-
-Use ripgrep-style patterns (adapt for Windows paths):
-
-```bash
-rg -n "Old Filename|old-slug|old-folder/old-file" path/to/vault
-```
-
-For this repo, default vault path in commands: `source/content`.
 
 ---
 

@@ -1,28 +1,32 @@
 ---
+title: "Azure App Service Plan"
 tags:
   - azure
   - cloud
   - az-204
-  - azure-app-services
+  - azure-app-service
+  - pricing
 ---
+
+# Azure App Service Plan
 
 An [[Azure App Service]] always runs in an App Service plan, which defines the set of compute resources available to the app.
 
-One or more apps can be configured to run in the same App Service Plan.
+One or more apps can be configured to run in the same App Service plan.
 
 Each App Service plan defines:
 
 - Operating System (Windows, Linux)
 - Region (West US, East US, etc.)
-- Number of #VM instances
+- Number of VM instances
 - Size of VM instances (Small, Medium, Large)
 - Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
 
-App Service Plans can be reused and configured as independent entities.
+App Service plans can be reused and configured as independent entities.
 
 ![App Service Plans list](app-service-plans.png)
 
-If you publish some applications under the same App Service Plan, when you need to scale the application the same changes are applied to all the other applications within the same App Service Plan. To scale only a single application, you have to move it to a standalone App Service Plan.
+If you publish some applications under the same App Service plan, when you need to scale the application the same changes are applied to all the other applications within that plan. To scale only a single application, you have to move it to a standalone App Service plan.
 
 You can _potentially_ save money by putting multiple apps into one App Service plan. However, since apps in the same App Service plan all share the same compute resources you need to **understand the capacity of the existing App Service plan** and the expected load for the new app.
 
@@ -32,7 +36,7 @@ You can _potentially_ save money by putting multiple apps into one App Service p
 
 - **Free** and **Shared** pricing tiers;
 - the app runs on the same Azure VM as other App Service apps (these apps can belong to other customers)
-- CPU and computation resources are shared with all the other apps hosted in th same VM;
+- CPU and computation resources are shared with all the other apps hosted on the same VM;
 - resources **cannot scale out**;
 - they have a fixed allocated amount of CPU time;
 
@@ -47,7 +51,7 @@ You can _potentially_ save money by putting multiple apps into one App Service p
 
 ### Isolated
 
-Similar to Dedicated compute, but with even more isolation.
+Similar to dedicated compute, but with even more isolation.
 
 - **Isolated** and **IsolatedV2** tiers;
 - resources are stored in dedicated VMs and Azure Virtual Networks;
@@ -65,3 +69,9 @@ Similar to Dedicated compute, but with even more isolation.
   - `az webapp up`, which can also create a new App Service
   - Zip deployment, using `curl`
   - FTP/FTPS
+
+## See also
+
+- [[Azure App Service Autoscale]]
+- [[Azure App Services Deployment Slots]]
+- [[Multitenant App Service networking]]

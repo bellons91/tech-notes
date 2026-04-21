@@ -1,6 +1,15 @@
 ---
-tags: azure, cloud, az-900, paas, az-204
+title: "Azure App Service"
+tags:
+  - azure
+  - cloud
+  - az-900
+  - az-204
+  - paas
+  - azure-app-service
 ---
+
+# Azure App Service
 
 Build and host web apps, background jobs, mobile back-ends, and RESTful APIs **without managing infrastructure**.
 
@@ -12,19 +21,19 @@ With Azure App Service you can both [[Scale up]] and [[Scale out]].
 
 You can use CI/CD and [[Azure App Services Deployment Slots]].
 
-Each App Service belongs to an [[Azure App Service Plan]], which defines the compute capabilities.
+Each app belongs to an [[Azure App Service Plan]], which defines the compute capabilities.
 
 ## Types of App Services
 
 ### Web apps
 
-Used for hosting web applications. You can choose the OS: Windows or Linux.
+Used for hosting web applications. You can choose the OS: Windows or Linux. See [[Azure App Service on Linux]] for the Linux stack.
 
 ### API apps
 
 Build REST-based web applications.
 
-**It supports Swagger**, and it allows to publish the APIs in Azure Marketplace.
+**It supports Swagger**, and it allows you to publish the APIs in Azure Marketplace.
 
 ### WebJobs
 
@@ -47,14 +56,21 @@ Used to build a backend for iOS and Android applications.
 
 There are two main deployment types, depending on the [[Azure App Service Plan]].
 
-- **multitenant public service**: host App Service plans in
+- **Multitenant public service**: host App Service plans in
   - Free
   - Shared
   - Basic
   - Standard
   - Premium, PremiumV2, PremiumV3
-- **single-tenant environment**: available for Isolated SKU.
+- **Single-tenant environment**: available for Isolated SKU.
+
+For networking in the multitenant environment, see [[Multitenant App Service networking]].
 
 ## Autoscaling
 
 [[Azure App Service Autoscale]] monitors the resource metrics of a web app as it runs. It detects situations where other resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded.
+
+## See also
+
+- [[Configuring Azure App Services]]
+- [[Azure App Service Authentication and Authorization]]

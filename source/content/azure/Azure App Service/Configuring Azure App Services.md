@@ -1,10 +1,17 @@
 ---
+title: "Configuring Azure App Services"
 tags:
   - azure
   - cloud
   - az-204
-  - azure-app-services
+  - azure-app-service
+  - configuration
+  - diagnostics
 ---
+
+# Configuring Azure App Services
+
+This note covers portal settings and diagnostics for [[Azure App Service]]. For deployment without downtime, see [[Azure App Services Deployment Slots]].
 
 ## Application settings
 
@@ -20,7 +27,7 @@ Note: **the key format changes for Linux-based containers**. Instead of using `K
 
 There are some settings that define the underlying infrastructure of the App Service.
 
-Depending on the values, the application might require to scale up to a higher pricint tier.
+Depending on the values, the application might require scaling up to a higher pricing tier.
 
 Examples are:
 
@@ -30,7 +37,7 @@ Examples are:
   - **WebSocket protocol**: useful for [[SignalR]];
   - **[[Always On]]**: disabled by default;
   - **Managed pipeline version**: The IIS pipeline mode. Set it to _Classic_ if you have a legacy app that requires an older version of IIS.
-  - **HTTP version**: Set to 2.0 to enable support for HTTPS/2 protocol.
+  - **HTTP version**: Set to 2.0 to enable support for HTTP/2.
   - **[[ARR Affinity]]**: In a multi-instance deployment, ensure that the client is routed to the same instance for the life of the session. You can set this option to _Off_ for stateless applications.
 - **Debugging**: Enable remote debugging for ASP.NET, ASP.NET Core, or Node.js apps. This option turns off automatically after 48 hours.
 - **Incoming client certificates**: require client certificates in mutual authentication. [[Transport Layer Security]] mutual authentication is used to restrict access to your app by enabling different types of authentication for it.
@@ -51,15 +58,15 @@ Handler mappings let you add custom script processors to handle requests for spe
 
 You can configure virtual applications and directories by specifying each virtual directory and its corresponding physical path relative to the website root (D:\home). To mark a virtual directory as a web application, clear the Directory check box.
 
-### Linux app + containeraized apps
+### Linux apps and containerized apps
 
 Containerized apps include **all Linux apps and also the Windows and Linux custom containers** running on App Service.
 
-You can use a storage account as a storage mount. The mount can be a [[Azure Files]] or [[Azure Blob Storage]].
+You can use a storage account as a storage mount. The mount can be [[Azure Files]] or [[Azure Blob Storage]].
 
 ## Diagnostic logging
 
-There are some built-in deiagnostics associated with App Services.
+There are some built-in diagnostics associated with App Services.
 
 ### Application logging
 
@@ -136,3 +143,8 @@ You can either:
 - Purchase an App Service certificate;
 - **Import a certificate from Key Vault**: the certificate is then stored in [[azure-key-vault]];
 - Upload a private certificate (it must be stored in a [[PFX file]] and encrypted with [[Triple-DES]])
+
+## See also
+
+- [[Azure App Service on Linux]]
+- [[Multitenant App Service networking]]

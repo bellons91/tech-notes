@@ -1,11 +1,14 @@
 ---
+title: "Azure App Service Autoscale"
 tags:
   - azure
   - cloud
   - az-204
   - autoscaling
-  - azure-app-services
+  - azure-app-service
 ---
+
+# Azure App Service Autoscale
 
 Autoscaling is a cloud system or process that adjusts available resources based on the current demand.
 
@@ -27,7 +30,7 @@ Autoscaling provides [[elasticity]] for your services, allowing you to add resou
 
 Autoscaling is also affected by the number of instances of the service. The fewer the number of instances initially, the less capacity you have to handle an increasing workload while autoscaling spins up more instances.
 
-Autoscaling is a feature tightly bound to [[Azure App Service Plan]]. Each Service Plan has an associated scaling limit that cannot be surpassed. Not all service plans support autoscaling. **The development pricing tiers are either limited to a single instance (the F1 and D1 tiers)**, or they only provide **manual scaling (the B1 tier)**. If you've selected one of these tiers, you must first scale up to the S1 or any of the P-level production tiers.
+Autoscaling is a feature tightly bound to [[Azure App Service Plan]]. Each service plan has an associated scaling limit that cannot be surpassed. Not all service plans support autoscaling. **The development pricing tiers are either limited to a single instance (the F1 and D1 tiers)**, or they only provide **manual scaling (the B1 tier)**. If you've selected one of these tiers, you must first scale up to the S1 or any of the P-level production tiers.
 
 ## Autoscale conditions and rules
 
@@ -40,7 +43,7 @@ Scaling to a specific instance count only enables you to scale out to a defined 
 
 You can create multiple autoscale conditions to handle different schedules and metrics. Azure auto-scales your service when any of these conditions apply.
 
-An App Service Plan also has a **default condition** that is used if none of the other conditions are applicable. **This condition is always active and doesn't have a schedule**.
+An App Service plan also has a **default condition** that is used if none of the other conditions are applicable. **This condition is always active and doesn't have a schedule**.
 
 An **autoscale rule** specifies a metric to monitor and how autoscaling should respond when this metric crosses a defined threshold. The metrics you can monitor for a web app are:
 
@@ -54,7 +57,7 @@ An **autoscale rule** specifies a metric to monitor and how autoscaling should r
 
 Autoscale works by analyzing trends in metric values over time across all instances. This analysis is a multi-step process:
 
-1. Aggregate values for the metrics for all instances across a period of time called **time grain**. Generally, the time grain is 1 minute. Then it aggregates the values (available **time grain statistics** are _Average_, _Minimum_, _Maximum_, _Sum_, _Last_, _Count_), and stores the aggreagate value (known as **time aggregation**).
+1. Aggregate values for the metrics for all instances across a period of time called **time grain**. Generally, the time grain is 1 minute. Then it aggregates the values (available **time grain statistics** are _Average_, _Minimum_, _Maximum_, _Sum_, _Last_, _Count_), and stores the aggregate value (known as **time aggregation**).
 2. After a user-defined period (known as **duration**), the process re-runs the calculations. Duration must be longer than time grain. **The minimum duration value is 5 minutes**.
 
 An autoscale action has a **cool down period**, specified in minutes (minimum 5 minutes), during which the scale rules won't be triggered again. This is done to stabilize the system between autoscale events.
@@ -70,7 +73,7 @@ You could define the following four rules in the same autoscale condition:
 - If the CPU utilization drops below 50%, scale-in by 1
 
 When determining whether to **scale out**, the autoscale action is performed if **any** of the scale-out rules are met (HTTP queue length exceeds 10 **or** CPU utilization exceeds 70%).
-When **scaling in**, the autoscale action runs only if **all** of the scale-in rules are met (HTTP queue length drops to zero **and** CPU utilization falls below 50%).
+When **scaling in**, the autoscale action runs only if **all** the scale-in rules are met (HTTP queue length drops to zero **and** CPU utilization falls below 50%).
 
 If you need to scale in if only one of the scale-in rules is met, you must define the rules in separate autoscale conditions.
 
@@ -87,3 +90,8 @@ All autoscale successes and failures are logged in the Activity Log. You can the
 5. Configure custom notifications (email, webhook) to get notified when an autoscale activity occurs (or fails).
 
 **Flapping** is when scale-in and scale-out actions continually go back and forth. It happens because when you add a new instance during a scale-out action, the total percentage of resources is lower than before the scale-out action. If it's lower than the scale-in threshold, the scale-in action takes place, returning to the original situation.
+
+## See also
+
+- [[Azure App Service]]
+- [[Azure App Service Plan]]
