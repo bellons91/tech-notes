@@ -1,64 +1,69 @@
-- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio.
-- **Password spray**: hacking technique. You try the most common passwords on multiple accounts, trying to find an account that used that password;
-- **SIM-jacking**: vulnerability that uses SIMs and SMS content;
-- **Hammering**: hacking technique. Hackers send continuous push notifications until the victim, annoyed by these notifications, accepts one and gives permissions to the intruder;
-- **Adversary-in-the-middle**: deceive users;
-- **Fitness Functions**: functions that check the -ilities of the architecture. You use metrics and monitors;
-- [[ArchUnit.NET]]: library for testing the code architecture. You can validate module dependencies (see also [[Architectural Tests]]);
-- **JIT** (Just-in-time compilation): compiles the code on the fly; it compiles the code that you are going to execute;
-- **OSR** (On-stack replacement): used to optimize methods with long runs. If during the first executions it finds something to optimize, it replaces the low-level code on the stack;
-- **Dynamic PGO**: the Jitter understands the code usage and optimizes the compilation;
-- **SNAT (source network address translation)**: SNAT maps the IP address of the backend to the public IP address of your load balancer. SNAT prevents outside sources from having a direct address to the backend instances;
-- **B-tree**: data structure used for indexing in SQL databases;
-- **Rowstore index**: index based on the value of the row. Userful for searches for specific values or ranges;
-- **Columnstore index**: index based on the values for a specific column. It's a `distinct` on the values on the column, and is useful for searching for multiple rows with the same value in that column. You can even use an index on every column; it is optimized for reads; it is useful for creating reports;
-- **Heap (SQL)**: column without indexes;
-- **Graph on SQL server**: you can create graphs using `CREATE TABLE AS EDGE` and `CREATE TABLE AS NODE`;
-- **Clustered-index** on a date makes the database equivalent to a time-series database;
-- **RLS (Row-level security)**: based on the user executing the query, the query can view a subset of the rows. It happens using a **Tabular function** that, given the user, returns the subset of the rows. This subset is then optimized by the DB engine. A good usage is multi-tenant applications, where you don't want data leak to other companies. Also known as **Policy-Based Security**.
-- **Data masking**: the database masks sensible data automatically, so that developers (and log tools) cannot access the data. To see the actual value you have to execute an `UNMASK` operation;
-- **Ledger**: to entrust that data has not been changed from a specific date, all the updates on the main db are also stored on a separate read-only database. In this way, by checking the final outcome, you can demonstrate that data has not been tampered;
-- **Data API builder**: dotnet tool that generates CRUD APIS (Rest or GraphQL) for a table on the Azure Database. It also handles pagination, authentication, filtering...
-- **Hyperscale**: SQL engine used to perform queries on distributed databases. Data is also stored in-memory for faster access.
-- **IPAM (IP Address Management)**: technology and networking practice that involves planning, tracking, and managing IP address space within a network. It centralizes the administration of network addresses, ensuring efficient allocation, preventing conflicts, and often integrating with systems like DHCP and DNS to streamline network operations.
-- **DHCP (Dynamic Host Configuration Protocol)**: a network management protocol used to automate the setup of devices on IP networks. It dynamically assigns IP addresses and other critical network configuration parameters (such as subnet mask, default gateway, and DNS servers) to devices, simplifying network administration and ensuring efficient address utilization.
-- **AGC (Azure Gateway for Containers)**: specialized use of the Azure Application Gateway designed to serve containerized environments. AGC is tailored to handle container traffic by efficiently routing, load balancing, and securing web requests to your containerized applications. It allows for features like path-based routing, SSL termination, and integration with container orchestration platforms, ensuring that modern, microservices-based apps have a reliable and secure entry point into the network. [docs](https://learn.microsoft.com/en-us/azure/aks/advanced-container-networking-services-overview).
-- **Azure Managed Grafana**: istanza di Grafana gestita da Azure (a pagamento)
-- Azure functions
-  - will have Host Initialization Failures stored on AppInsights (instead of on the shell)
-  - OTel support
-  - Flex Consumption Plan: allows flexibility, private networking, and has pay-per-use license.
-  - Can be deployed using Azure Container Apps
-- **Durable Task Scheduler**
+---
+title: Index
+tags: glossary, index, reference
+---
+
+- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio. #apache-spark #columnar-storage #data-formats
+- **Password spray**: hacking technique. You try the most common passwords on multiple accounts, trying to find an account that used that password; #security #authentication #attack
+- **SIM-jacking**: vulnerability that uses SIMs and SMS content; #security #mobile #telecom
+- **Hammering**: hacking technique. Hackers send continuous push notifications until the victim, annoyed by these notifications, accepts one and gives permissions to the intruder; #security #authentication #mobile
+- **Adversary-in-the-middle**: deceive users; #security #mitm #phishing
+- **Fitness Functions**: functions that check the -ilities of the architecture. You use metrics and monitors; #architecture #devops #observability
+- [[ArchUnit.NET]]: library for testing the code architecture. You can validate module dependencies (see also [[Architectural Tests]]); #dotnet #testing #architecture
+- **JIT** (Just-in-time compilation): compiles the code on the fly; it compiles the code that you are going to execute; #dotnet #runtime #compilation #jit
+- **OSR** (On-stack replacement): used to optimize methods with long runs. If during the first executions it finds something to optimize, it replaces the low-level code on the stack; #dotnet #runtime #jit #optimization
+- **Dynamic PGO**: the Jitter understands the code usage and optimizes the compilation; #dotnet #runtime #compilation #optimization #pgo
+- **SNAT (source network address translation)**: SNAT maps the IP address of the backend to the public IP address of your load balancer. SNAT prevents outside sources from having a direct address to the backend instances; #azure #networking #load-balancing #nat
+- **B-tree**: data structure used for indexing in SQL databases; #database #indexing #data-structures #sql
+- **Rowstore index**: index based on the value of the row. Userful for searches for specific values or ranges; #sql-server #database #indexing #rowstore
+- **Columnstore index**: index based on the values for a specific column. It's a `distinct` on the values on the column, and is useful for searching for multiple rows with the same value in that column. You can even use an index on every column; it is optimized for reads; it is useful for creating reports; #sql-server #database #indexing #columnar-storage #analytics
+- **Heap (SQL)**: column without indexes; #sql-server #database #indexing
+- **Graph on SQL server**: you can create graphs using `CREATE TABLE AS EDGE` and `CREATE TABLE AS NODE`; #sql-server #database #graph-database
+- **Clustered-index** on a date makes the database equivalent to a time-series database; #sql-server #database #indexing #time-series
+- **RLS (Row-level security)**: based on the user executing the query, the query can view a subset of the rows. It happens using a **Tabular function** that, given the user, returns the subset of the rows. This subset is then optimized by the DB engine. A good usage is multi-tenant applications, where you don't want data leak to other companies. Also known as **Policy-Based Security**. #sql-server #database #security #multi-tenancy
+- **Data masking**: the database masks sensible data automatically, so that developers (and log tools) cannot access the data. To see the actual value you have to execute an `UNMASK` operation; #sql-server #database #security #compliance
+- **Ledger**: to entrust that data has not been changed from a specific date, all the updates on the main db are also stored on a separate read-only database. In this way, by checking the final outcome, you can demonstrate that data has not been tampered; #sql-server #database #security #audit
+- **Data API builder**: dotnet tool that generates CRUD APIS (Rest or GraphQL) for a table on the Azure Database. It also handles pagination, authentication, filtering... #azure #sql-server #api #graphql #dotnet
+- **Hyperscale**: SQL engine used to perform queries on distributed databases. Data is also stored in-memory for faster access. #azure #sql-server #database #distributed-systems
+- **IPAM (IP Address Management)**: technology and networking practice that involves planning, tracking, and managing IP address space within a network. It centralizes the administration of network addresses, ensuring efficient allocation, preventing conflicts, and often integrating with systems like DHCP and DNS to streamline network operations. #networking #ip-addressing #dns #dhcp
+- **DHCP (Dynamic Host Configuration Protocol)**: a network management protocol used to automate the setup of devices on IP networks. It dynamically assigns IP addresses and other critical network configuration parameters (such as subnet mask, default gateway, and DNS servers) to devices, simplifying network administration and ensuring efficient address utilization. #networking #ip-addressing #dhcp
+- **AGC (Azure Gateway for Containers)**: specialized use of the Azure Application Gateway designed to serve containerized environments. AGC is tailored to handle container traffic by efficiently routing, load balancing, and securing web requests to your containerized applications. It allows for features like path-based routing, SSL termination, and integration with container orchestration platforms, ensuring that modern, microservices-based apps have a reliable and secure entry point into the network. [docs](https://learn.microsoft.com/en-us/azure/aks/advanced-container-networking-services-overview). #azure #kubernetes #containers #networking #load-balancing
+- **Azure Managed Grafana**: istanza di Grafana gestita da Azure (a pagamento) #azure #observability #grafana #monitoring
+- **Azure functions** #azure #serverless #azure-functions
+  - will have Host Initialization Failures stored on AppInsights (instead of on the shell) #observability #application-insights
+  - OTel support #observability #opentelemetry
+  - Flex Consumption Plan: allows flexibility, private networking, and has pay-per-use license. #azure #serverless #networking
+  - Can be deployed using Azure Container Apps #azure #container-apps
+- **Durable Task Scheduler** #azure #serverless #durable-functions #distributed-systems
   - GA in Nov 2025
   - A different backend environment for running durable functions.
   - It's a configuration - the operational code does not change
   - Distributed traffic
-- **M.E.AI**: .NET library to integrate AI specifying the model;
-  - Can save prompt templates in `.prompt` files, using placeholders. The Source Generator generates a class for them, and asks you to fill in the placeholders as they were input parameters.
-- **Hoptimator**: [open-source platform created by LinkedIn](https://www.linkedin.com/blog/engineering/data-streaming-processing/declarative-data-pipelines-with-hoptimator) to manage multi-hop data pipelines.
-- **OWL (Web Ontology Language)**: Structured approach to define semantics and relationships between objects. [Link](https://en.wikipedia.org/wiki/Web_Ontology_Language).
-- **RDFS (Resource Description Framework Schema)**: set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies. [Link](https://en.wikipedia.org/wiki/RDF_Schema)
-- [[Azure Monitor]] with AI-powered investigation:
+- **M.E.AI**: .NET library to integrate AI specifying the model; #dotnet #ai #llm #machine-learning
+  - Can save prompt templates in `.prompt` files, using placeholders. The Source Generator generates a class for them, and asks you to fill in the placeholders as they were input parameters. #dotnet #source-generators
+- **Hoptimator**: [open-source platform created by LinkedIn](https://www.linkedin.com/blog/engineering/data-streaming-processing/declarative-data-pipelines-with-hoptimator) to manage multi-hop data pipelines. #data-engineering #streaming #pipelines #etl
+- **OWL (Web Ontology Language)**: Structured approach to define semantics and relationships between objects. [Link](https://en.wikipedia.org/wiki/Web_Ontology_Language). #semantic-web #ontology #rdf #knowledge-graph
+- **RDFS (Resource Description Framework Schema)**: set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies. [Link](https://en.wikipedia.org/wiki/RDF_Schema) #semantic-web #ontology #rdf #knowledge-graph
+- [[Azure Monitor]] with AI-powered investigation: #azure #observability #monitoring #aiops
 	- Link to [announcement](https://techcommunity.microsoft.com/blog/azureobservabilityblog/public-preview-smarter-troubleshooting-in-azure-monitor-with-ai-powered-investig/4411878)
 	- Fine anomalies on the logs, across applications
-	- **Issues**: new entity that helps troubleshooting
+	- **Issues**: new entity that helps troubleshooting #incident-response #observability
 		- AI-powered investigations across several azure sources (both applications and infrastructure resources). It adds a possible solution, and can be tracked by using a Status on the Issue.
 	- Smart scoping: automatically detect the underlying infrastructure
-- **PromQL**: language used by [[Prometheus]]
-- **[[Source Generator]]**: a way to generate classes dynamically, without having them stored as "concrete" files (so, they are not stored on GIT)
-- `extern` keyword in C#: this modifier indicates that the method is implemented externally, not in C# code. The implementation is usually provided in a DLL.
-- **Assembly Trimming**: it is a process in .NET where unused code (types, methods, assemblies) is removed from your application during build or publish. This makes the final app smaller and faster by including only what's actually needed for execution. It's especially useful for optimizing deployments in environments like cloud or mobile.
-- **AOT (Ahead-of-Time) compilation** is a process where source code is compiled into native machine code before the application runs, rather than during execution. This can lead to faster startup times and better performance because the code doesn’t need to be compiled by the runtime at launch. In .NET, AOT is used to create self-contained, optimized applications for platforms where Just-In-Time (**JIT**) compilation isn’t possible or desired. Also called **Native Compile**.
-- **JIT (Just-In-Time) compilation** is a process where code is compiled into native machine code at runtime, just before it is executed. In environments like .NET, the application is initially compiled to an intermediate language (IL), and the JIT compiler translates IL to machine code as the program runs. This allows for optimizations based on the actual execution environment, but can result in slower startup times compared to AOT.
-- **Weaving** in .NET refers to the process of modifying compiled code (assemblies) after compilation, typically to inject additional behavior or logic. This is often used in aspect-oriented programming (**AOP**), where cross-cutting concerns like logging, security, or transaction management are added automatically to methods or classes without changing the original source code. Weaving can be done at build time, load time, or runtime using tools like [Fody](https://github.com/Fody/Fody) or PostSharp.
-- **HttpOnly cookie**: cookie that can be only used for api-to-api communication, and is not accessible via browser. HttpOnly is an attribute of the cookie.
-- **IIFE (Immediately Invoked Function Expressions) modules**: a JavaScript pattern for creating private, isolated code blocks, preventing global namespace pollution, and enabling modular programming by wrapping code in a function that runs instantly, returning an object with public methods while keeping internal variables private through closures, a technique popular before native ES modules.
-- **SWOT Analysis**:  a strategic planning tool used to identify an organization's internal **S**trengths and **W**eaknesses, and external **O**pportunities and **T**hreats, providing a comprehensive overview to guide decision-making, capitalize on advantages, and mitigate risks for better strategic planning and goal achievement. It's used for businesses, projects, or even personal growth, assessing controllable internal factors (S, W) and uncontrollable external factors (O, T) to understand the current situation and plan for the future.
-- **Decision Matrix**: structured tool that uses a table to help you choose the best option from several alternatives by scoring them against **weighted** criteria, making complex choices more objective by reducing bias. You list options as rows and criteria as columns, assign importance (weight) to criteria, score each option against them, then multiply scores by weights to find the highest-scoring choice.
-- **Consumer-Driven Contract Testing (CDCT)** : testing approach where the consumer (e.g., frontend app) defines a "contract" (expected requests/responses) with the provider (e.g., backend API), creating tests against a mock provider; the provider then uses these contracts to verify their API meets consumer needs before deployment, creating a shared understanding and preventing integration issues, especially in microservices. This process ensures the provider fulfills consumer expectations without slow, brittle end-to-end tests, using tools like **Pact** to manage these contracts. 
-- [**Pact**](https://docs.pact.io/): tool for Consumer-driven contract testing
-- **[Dredd](https://dredd.org/en/latest/)**: tool for Provider-first contract testing, with OpenAPI.
+- **PromQL**: language used by [[Prometheus]] #observability #prometheus #metrics #monitoring
+- **[[Source Generator]]**: a way to generate classes dynamically, without having them stored as "concrete" files (so, they are not stored on GIT) #dotnet #source-generators #code-generation
+- `extern` keyword in C#: this modifier indicates that the method is implemented externally, not in C# code. The implementation is usually provided in a DLL. #csharp #dotnet #interop
+- **Assembly Trimming**: it is a process in .NET where unused code (types, methods, assemblies) is removed from your application during build or publish. This makes the final app smaller and faster by including only what's actually needed for execution. It's especially useful for optimizing deployments in environments like cloud or mobile. #dotnet #build #optimization #deployment
+- **AOT (Ahead-of-Time) compilation** is a process where source code is compiled into native machine code before the application runs, rather than during execution. This can lead to faster startup times and better performance because the code doesn’t need to be compiled by the runtime at launch. In .NET, AOT is used to create self-contained, optimized applications for platforms where Just-In-Time (**JIT**) compilation isn’t possible or desired. Also called **Native Compile**. #dotnet #runtime #compilation #aot #native
+- **JIT (Just-In-Time) compilation** is a process where code is compiled into native machine code at runtime, just before it is executed. In environments like .NET, the application is initially compiled to an intermediate language (IL), and the JIT compiler translates IL to machine code as the program runs. This allows for optimizations based on the actual execution environment, but can result in slower startup times compared to AOT. #dotnet #runtime #compilation #jit
+- **Weaving** in .NET refers to the process of modifying compiled code (assemblies) after compilation, typically to inject additional behavior or logic. This is often used in aspect-oriented programming (**AOP**), where cross-cutting concerns like logging, security, or transaction management are added automatically to methods or classes without changing the original source code. Weaving can be done at build time, load time, or runtime using tools like [Fody](https://github.com/Fody/Fody) or PostSharp. #dotnet #aop #il #code-generation
+- **HttpOnly cookie**: cookie that can be only used for api-to-api communication, and is not accessible via browser. HttpOnly is an attribute of the cookie. #web-security #cookies #authentication #http
+- **IIFE (Immediately Invoked Function Expressions) modules**: a JavaScript pattern for creating private, isolated code blocks, preventing global namespace pollution, and enabling modular programming by wrapping code in a function that runs instantly, returning an object with public methods while keeping internal variables private through closures, a technique popular before native ES modules. #javascript #modules #frontend
+- **SWOT Analysis**:  a strategic planning tool used to identify an organization's internal **S**trengths and **W**eaknesses, and external **O**pportunities and **T**hreats, providing a comprehensive overview to guide decision-making, capitalize on advantages, and mitigate risks for better strategic planning and goal achievement. It's used for businesses, projects, or even personal growth, assessing controllable internal factors (S, W) and uncontrollable external factors (O, T) to understand the current situation and plan for the future. #strategy #planning #business-analysis
+- **Decision Matrix**: structured tool that uses a table to help you choose the best option from several alternatives by scoring them against **weighted** criteria, making complex choices more objective by reducing bias. You list options as rows and criteria as columns, assign importance (weight) to criteria, score each option against them, then multiply scores by weights to find the highest-scoring choice. #strategy #planning #decision-making
+- **Consumer-Driven Contract Testing (CDCT)** : testing approach where the consumer (e.g., frontend app) defines a "contract" (expected requests/responses) with the provider (e.g., backend API), creating tests against a mock provider; the provider then uses these contracts to verify their API meets consumer needs before deployment, creating a shared understanding and preventing integration issues, especially in microservices. This process ensures the provider fulfills consumer expectations without slow, brittle end-to-end tests, using tools like **Pact** to manage these contracts. #testing #microservices #api #contract-testing
+- [**Pact**](https://docs.pact.io/): tool for Consumer-driven contract testing #testing #contract-testing #microservices #api
+- **[Dredd](https://dredd.org/en/latest/)**: tool for Provider-first contract testing, with OpenAPI. #testing #contract-testing #openapi #api
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
