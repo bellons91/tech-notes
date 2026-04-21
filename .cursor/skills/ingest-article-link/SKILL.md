@@ -126,3 +126,4 @@ Some posts spend meaningful space on **what something means** (definitions, moti
 - Leaving **`index.md`** glossary entries as **bold-only** names when a matching note was created for that term.
 - Dumping long quotes instead of a tight summary with a pointer to the URL.
 - Adding many tangential wikilinks that do not reflect real topical overlap.
+- Mentioning the article as "the ingested article mentions" or "The article says that". 

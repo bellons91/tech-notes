@@ -3,7 +3,7 @@ title: Index
 tags: glossary, index, reference
 ---
 
-- **Parquet**: data format used by Apache Spark; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio. #apache-spark #columnar-storage #data-formats
+- **Parquet**: data format used by [[Apache Spark]]; data is stored in columns, and not in rows. Can be queried using tools like *Parquet Explorer* in Visual Studio. #apache-spark #columnar-storage #data-formats
 - **Password spray**: hacking technique. You try the most common passwords on multiple accounts, trying to find an account that used that password; #security #authentication #attack
 - **SIM-jacking**: vulnerability that uses SIMs and SMS content; #security #mobile #telecom
 - **Hammering**: hacking technique. Hackers send continuous push notifications until the victim, annoyed by these notifications, accepts one and gives permissions to the intruder; #security #authentication #mobile
