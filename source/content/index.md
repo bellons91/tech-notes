@@ -64,6 +64,8 @@ tags: glossary, index, reference
 - **Consumer-Driven Contract Testing (CDCT)** : testing approach where the consumer (e.g., frontend app) defines a "contract" (expected requests/responses) with the provider (e.g., backend API), creating tests against a mock provider; the provider then uses these contracts to verify their API meets consumer needs before deployment, creating a shared understanding and preventing integration issues, especially in microservices. This process ensures the provider fulfills consumer expectations without slow, brittle end-to-end tests, using tools like **Pact** to manage these contracts. #testing #microservices #api #contract-testing
 - [**Pact**](https://docs.pact.io/): tool for Consumer-driven contract testing #testing #contract-testing #microservices #api
 - **[Dredd](https://dredd.org/en/latest/)**: tool for Provider-first contract testing, with OpenAPI. #testing #contract-testing #openapi #api
+- **Luhn check**: a mathematical algorithm that validates credit cards codes. It does not ensure that the card is active: it validates that the code of the credit card is valid. #algorithm
+- [[PII redaction before LLM prompts]]: scrub or tokenize sensitive spans before calling third-party model APIs; reversible placeholders and policy layers. Tooling walkthrough: [[Microsoft Presidio]]. #privacy #llm #pii #de-identification
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
