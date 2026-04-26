@@ -66,6 +66,7 @@ tags: glossary, index, reference
 - **[Dredd](https://dredd.org/en/latest/)**: tool for Provider-first contract testing, with OpenAPI. #testing #contract-testing #openapi #api
 - **Luhn check**: a mathematical algorithm that validates credit cards codes. It does not ensure that the card is active: it validates that the code of the credit card is valid. #algorithm
 - [[PII redaction before LLM prompts]]: scrub or tokenize sensitive spans before calling third-party model APIs; reversible placeholders and policy layers. Tooling walkthrough: [[Microsoft Presidio]]. #privacy #llm #pii #de-identification
+- **Semantic segmentation**: an advanced form of object detection where, rather than indicate an object's location by drawing a box around it, the #ai model can identify the individual pixels in the image that belong to a particular object. #computer-vision
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
