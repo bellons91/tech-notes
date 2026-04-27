@@ -34,3 +34,8 @@ This CLI command will create a new model locally, so that you can run
 ollama run my-custom-model 
 ```
 to start conversating with it.
+
+## Related
+
+- [[How to use Hugging Face models in Ollama]] — pull GGUF models from Hugging Face or convert and import them with a Modelfile.
+- [[GGUF]] — the binary model format Ollama uses for local inference.
