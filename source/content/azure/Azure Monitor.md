@@ -1,6 +1,16 @@
 ---
-tags: azure, cloud, az-900
+title: "Azure Monitor"
+tags:
+  - azure
+  - cloud
+  - az-900
+  - monitoring
+  - observability
+aliases:
+  - Monitor
 ---
+
+# Azure Monitor
 
 Azure Monitor is a platform for collecting data on your resources, analyzing that data, visualizing the information, and even acting on the results.
 
@@ -9,3 +19,9 @@ Azure Monitor can monitor **Azure** resources, your **on-premises** resources, a
 ![Azure Monitor](azure-monitor.png)
 
 You can receive logs from several sources, such as a server application, and then store them in a repository that will be used to analyze the data.
+
+## Related tools
+
+- [[Azure Log Analytics]] — write and run log queries against Azure Monitor data
+- [[Application Insights]] — application-level monitoring (requests, dependencies, exceptions)
+- [[Azure Monitor Alerts]] — automated alerts and corrective actions when thresholds are crossed

@@ -26,23 +26,26 @@ Use folders consistently as **high-level categories** (examples already in use):
 
 | Area | Purpose |
 |------|--------|
-| **Azure** | Broad notes on Azure services and concepts. |
-| **Azure CLI** | Command-line usage, scripts, and CLI-oriented workflows. |
-| **Cheatsheet** | Quick references for scripts, languages, and compact lookups. |
-| **How-to** | Short guides for **repetitive operations** that are easy to forget. |
+| **azure/** | Broad notes on Azure services and concepts. |
+| **Azure CLI/** | Command-line usage, scripts, and CLI-oriented workflows. |
+| **Cheatsheets/** | Quick references for scripts, languages, and compact lookups. |
+| **general/** | General tech topics not tied to Azure (architecture, protocols, AI, security, etc.). |
+| **how-to/** | Short guides for **repetitive operations** that are easy to forget. |
 
-**`index.md`:** Use for **quick facts** or stubs on topics that do **not** warrant a full page yet (too little information to justify a dedicated note).
+**`index.md`:** Acts as a running glossary — short one-liner definitions with inline `#hashtags`. Use it for quick facts or stubs that do **not** warrant a dedicated note yet.
 
 When creating or moving notes, place them under the folder that best matches this intent; prefer **cross-links** between related notes over duplicating content.
 
 ## Files, titles, and frontmatter
 
-- **File names:** `kebab-case.md` (e.g. `azure-storage-account-scripts.md`). Established entry points such as `index.md` may stay as-is.
-- **Human-facing title:** **Title Case** in the document (heading or frontmatter `title`), aligned with the note’s subject.
+- **File names:** Title Case with spaces is the dominant convention (e.g. `Azure Virtual Machines.md`, `Model Context Protocol.md`). `how-to/` notes use sentence case starting with "How to …". Cheatsheets follow `<Topic> Cheatsheet.md`.
+- **Human-facing title:** **Title Case** in the document (heading or frontmatter `title`), aligned with the note's subject.
+- **Template:** A minimal skeleton lives at [`source/content/templates/Note.md`](source/content/templates/Note.md) — use it as a starting point.
 - **Frontmatter:** All fields are **optional** today, but the direction is to **standardize** usage. When adding or editing frontmatter, prefer consistent keys:
   - `title` — Title Case; matches or clarifies the in-note heading.
-  - `tags` — meaningful, searchable labels (Azure area, tool, language, pattern, etc.).
-  - `aliases` — alternate titles or spellings readers (or the author) might search for.
+  - `tags` — kebab-case labels, **block-style YAML list** for richer notes (e.g. `- azure`, `- az-900`); comma-separated inline string acceptable for simple how-to/cheatsheet entries.
+  - `aliases` — alternate titles or spellings (e.g. `- Azure VM`).
+- **Tag patterns:** Azure content always includes `azure` and typically `az-900`; then specific service/concept tags (e.g. `virtual-machines`, `application-insights`). General content uses topic-specific tags only.
 
 ## Linking and discoverability (priority for assistants)
 
@@ -59,7 +62,12 @@ When editing or authoring notes, optimize for **searchability and navigation**:
 
 ## Quartz / build context (reference)
 
-- Site is generated with **Quartz** from `source/content`. Configuration lives under `source/` (e.g. `quartz.config.ts`, `quartz.layout.ts`).
-- Local preview (from repo docs): run `npx quartz build --serve` in `./source/`.
+- Site is generated with **Quartz** from `source/content`. Configuration lives under `source/` (`quartz.config.ts`, `quartz.layout.ts`).
+- **Local preview** — from the `source/` directory:
+  ```bash
+  npx quartz build --serve
+  # preview at http://localhost:8080
+  ```
+- See [`source/docs/build.md`](source/docs/build.md) for full CLI flags (`-d`, `-o`, `--port`, etc.).
 
 When unsure about Quartz-specific behavior, prefer the official Quartz documentation over guessing.

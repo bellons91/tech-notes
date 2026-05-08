@@ -65,6 +65,7 @@ tags: glossary, index, reference
 - [**Pact**](https://docs.pact.io/): tool for Consumer-driven contract testing #testing #contract-testing #microservices #api
 - **[Dredd](https://dredd.org/en/latest/)**: tool for Provider-first contract testing, with OpenAPI. #testing #contract-testing #openapi #api
 - **Luhn check**: a mathematical algorithm that validates credit cards codes. It does not ensure that the card is active: it validates that the code of the credit card is valid. #algorithm
+- **Semantic segmentation**: an advanced form of object detection where, rather than indicate an object's location by drawing a box around it, the #ai model can identify the individual pixels in the image that belong to a particular object. #computer-vision
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
