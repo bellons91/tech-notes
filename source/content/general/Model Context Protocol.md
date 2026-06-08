@@ -87,6 +87,10 @@ graph TD
     Server -->|Sends Responses| Host
 ```
 
+## Related
+
+- [[Harness Engineering]] — orchestration loop, tools, and memory around an LLM host; MCP is one way to expose tools to that host.
+
 ## Links
 
 - [The Model Context Protocol Explained](https://medium.com/@zbabar/the-model-context-protocol-explained-5f35223e4d56)
