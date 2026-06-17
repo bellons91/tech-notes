@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "2e9225e34664efd4",
+    "id": "cd7610e25b3bc758",
     "type": "split",
     "children": [
       {
-        "id": "f48435432d439656",
+        "id": "4eb21a8c1a29d561",
         "type": "tabs",
         "children": [
           {
-            "id": "ef82ced6664cc3bf",
+            "id": "0b4b5da8b3a22390",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "how-to/How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "1243752a4df710bb",
+    "id": "e0533b2c4a05f88d",
     "type": "split",
     "children": [
       {
-        "id": "8a4c81639dc8783e",
+        "id": "7c8327fb26416be9",
         "type": "tabs",
         "children": [
           {
-            "id": "b77831b90dd9f87b",
+            "id": "3f88298d7d1ba798",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "0829eb50dbb8a2b3",
+            "id": "de1cf8ff336d83f1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "436d75c49c949463",
+            "id": "65f8b69cad91552e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "ba1ec06a672fb227",
+    "id": "48aa9266a7e6a29c",
     "type": "split",
     "children": [
       {
-        "id": "6cea78168fbf9ccd",
+        "id": "0c1b243c74b69f49",
         "type": "tabs",
         "children": [
           {
-            "id": "2aa5a4c073617928",
+            "id": "b7ebb19b72e2369e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "category-folder/Some note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Some note"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "5acb7020384970a8",
+            "id": "35b1b40140f5bb21",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "category-folder/Some note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Some note"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "f850ba7e9e699bea",
+            "id": "2ecd44a69b5ae95d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,84 +131,51 @@
             }
           },
           {
-            "id": "2d9129bb8dcf7983",
+            "id": "53819b39c3fc52df",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2f90fd601fb47701",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "general/Root Cause Analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Root Cause Analysis"
-            }
-          },
-          {
-            "id": "c2e2300f7f30c24d",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
-      "broken-links:View broken links": false
+      "bases:Create new base": false
     }
   },
-  "active": "ef82ced6664cc3bf",
-  "lastOpenFiles": [
-    "Pasted image 20260612165743.png",
-    "how-to/How to see indexes and keys of a SQL table.md",
-    "how-to/How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio.md",
-    "index.md",
-    "general/Responsible AI.md",
-    "how-to/editorconfig-editor-visualstudio.png",
-    "general/PII redaction before LLM prompts.md",
-    "general/Open Data Contracts.md",
-    "general/Ollama.md",
-    "general/Microsoft Presidio.md",
-    "general/Hadoop.md",
-    "general/Apache Spark.md",
-    "general/GGUF.md",
-    "how-to/How to Kill Process by Id on PowerShell.md",
-    "how-to/Connect Cursor to Azure DevOps for AI code reviews.md",
-    "Ollama.md",
-    "scale-in.md",
-    "LLM model.md",
-    "how-to/How to use variables in a TSQL query.md",
-    "how-to/How to print errors in SQL execution.md",
-    "general/Source Generator.md",
-    "general/Architecture Decision Matrix.md",
-    "general/Architectural Tests.md",
-    "general/ArchUnit.NET.md",
-    "Pasted image 20260223180026.png",
-    "Pasted image 20251031104606.png",
-    "how-to/How to show query results in Azure DevOps Wiki.md",
-    "Pasted image 20250625094227.png",
-    "Pasted image 20250625094153.png",
-    "Pasted image 20250625093926.png",
-    "Pasted image 20250625093835.png",
-    "Pasted image 20250625093813.png",
-    "general/Runtime Time Assembly.md",
-    "general/Event-Driven Architecture.md",
-    "category-folder"
-  ]
+  "active": "0b4b5da8b3a22390",
+  "lastOpenFiles": []
 }

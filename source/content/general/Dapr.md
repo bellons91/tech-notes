@@ -23,7 +23,7 @@ Dapr exposes several APIs:
 - **State management**: Provides state management capabilities for transactions and CRUD operations.
 - **Pub/sub**: Allows publisher and subscriber container apps to intercommunicate via an intermediary message broker.
 - **Bindings**: Trigger your applications based on events
-- **Actors**: Dapr actors are message-driven, single-threaded, units of work designed to quickly scale. For example, in burst-heavy workload situations.
+- **Actors**: Dapr actors are message-driven, single-threaded, units of work designed to quickly scale. For example, in burst-heavy workload situations. See also [[Actor Model]].
 - **Observability**: Send tracing information to an Application Insights backend.
 - **Secrets**: Access secrets from your application code or reference secure values in your Dapr components.
 
