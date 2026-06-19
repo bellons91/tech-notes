@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "how-to/How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio.md",
+                "file": "how-to/How to install OhMyPosh and NerdFonts on Powershell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio"
+              "title": "How to install OhMyPosh and NerdFonts on Powershell"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 530.5
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -181,9 +181,18 @@
   },
   "active": "ef82ced6664cc3bf",
   "lastOpenFiles": [
+    "Pasted image 20260619095733.png",
+    "Pasted image 20260619095546.png",
+    "Pasted image 20260619095242.png",
+    "Pasted image 20260619095230.png",
+    "Pasted image 20260619095215.png",
+    "Pasted image 20260619093715.png",
+    "Pasted image 20260618174656.png",
+    "Pasted image 20260618174556.png",
+    "how-to/How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio.md",
+    "how-to/How to install OhMyPosh and NerdFonts on Powershell.md",
     "Pasted image 20260612165743.png",
     "how-to/How to see indexes and keys of a SQL table.md",
-    "how-to/How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio.md",
     "index.md",
     "general/Responsible AI.md",
     "how-to/editorconfig-editor-visualstudio.png",
@@ -206,15 +215,8 @@
     "general/Architectural Tests.md",
     "general/ArchUnit.NET.md",
     "Pasted image 20260223180026.png",
-    "Pasted image 20251031104606.png",
     "how-to/How to show query results in Azure DevOps Wiki.md",
-    "Pasted image 20250625094227.png",
-    "Pasted image 20250625094153.png",
-    "Pasted image 20250625093926.png",
-    "Pasted image 20250625093835.png",
-    "Pasted image 20250625093813.png",
     "general/Runtime Time Assembly.md",
-    "general/Event-Driven Architecture.md",
     "category-folder"
   ]
 }
