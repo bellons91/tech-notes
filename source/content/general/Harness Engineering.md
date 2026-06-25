@@ -69,7 +69,7 @@ Harnesses expose **tools**—commonly bash-oriented capabilities (create/read fi
 
 ### Memory
 
-Harnesses persist context in **plain files** (`.txt`, `.md`)—for example project rules in `AGENTS.md` or host-specific memory files. Memory can be **short-term** (session) or **long-term**; **RAG** and **vector databases** are forms of long-term memory the harness may use.
+Harnesses persist context in **plain files** (`.txt`, `.md`)—for example project rules in `AGENTS.md` or host-specific memory files. Memory can be **short-term** (session) or **long-term**; **RAG** and **vector databases** are forms of long-term memory the harness may use. At scale, [[RAG Pipeline Caching]] (semantic, retrieval, and prompt layers) reduces latency and inference cost for RAG-backed harnesses.
 
 ### State storage
 
