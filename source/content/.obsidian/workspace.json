@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "general/Medallion Architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Medallion Architecture"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "medal",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 337.5
   },
   "right": {
     "id": "ba1ec06a672fb227",
@@ -181,6 +182,8 @@
   },
   "active": "ef82ced6664cc3bf",
   "lastOpenFiles": [
+    "Pasted image 20260706180759.png",
+    "index.md",
     "how-to/How to install OhMyPosh and NerdFonts on Powershell.md",
     "Pasted image 20260619095733.png",
     "Pasted image 20260619095546.png",
@@ -193,7 +196,6 @@
     "how-to/How to use your Azure DevOps user to log into GitHub Copilot in Visual Studio.md",
     "Pasted image 20260612165743.png",
     "how-to/How to see indexes and keys of a SQL table.md",
-    "index.md",
     "general/Responsible AI.md",
     "how-to/editorconfig-editor-visualstudio.png",
     "general/PII redaction before LLM prompts.md",
