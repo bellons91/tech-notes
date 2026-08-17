@@ -45,11 +45,11 @@ tags: glossary, index, reference
 - **OWL (Web Ontology Language)**: Structured approach to define semantics and relationships between objects. [Link](https://en.wikipedia.org/wiki/Web_Ontology_Language). #semantic-web #ontology #rdf #knowledge-graph
 - **RDFS (Resource Description Framework Schema)**: set of classes with certain properties using the RDF extensible knowledge representation data model, providing basic elements for the description of ontologies. [Link](https://en.wikipedia.org/wiki/RDF_Schema) #semantic-web #ontology #rdf #knowledge-graph
 - [[Azure Monitor]] with AI-powered investigation: #azure #observability #monitoring #aiops
-	- Link to [announcement](https://techcommunity.microsoft.com/blog/azureobservabilityblog/public-preview-smarter-troubleshooting-in-azure-monitor-with-ai-powered-investig/4411878)
-	- Fine anomalies on the logs, across applications
-	- **Issues**: new entity that helps troubleshooting #incident-response #observability
-		- AI-powered investigations across several azure sources (both applications and infrastructure resources). It adds a possible solution, and can be tracked by using a Status on the Issue.
-	- Smart scoping: automatically detect the underlying infrastructure
+  - Link to [announcement](https://techcommunity.microsoft.com/blog/azureobservabilityblog/public-preview-smarter-troubleshooting-in-azure-monitor-with-ai-powered-investig/4411878)
+  - Fine anomalies on the logs, across applications
+  - **Issues**: new entity that helps troubleshooting #incident-response #observability
+    - AI-powered investigations across several azure sources (both applications and infrastructure resources). It adds a possible solution, and can be tracked by using a Status on the Issue.
+  - Smart scoping: automatically detect the underlying infrastructure
 - **PromQL**: language used by [[Prometheus]] #observability #prometheus #metrics #monitoring
 - **[[Source Generator]]**: a way to generate classes dynamically, without having them stored as "concrete" files (so, they are not stored on GIT) #dotnet #source-generators #code-generation
 - `extern` keyword in C#: this modifier indicates that the method is implemented externally, not in C# code. The implementation is usually provided in a DLL. #csharp #dotnet #interop
@@ -62,10 +62,11 @@ tags: glossary, index, reference
 - **SWOT Analysis**:  a strategic planning tool used to identify an organization's internal **S**trengths and **W**eaknesses, and external **O**pportunities and **T**hreats, providing a comprehensive overview to guide decision-making, capitalize on advantages, and mitigate risks for better strategic planning and goal achievement. It's used for businesses, projects, or even personal growth, assessing controllable internal factors (S, W) and uncontrollable external factors (O, T) to understand the current situation and plan for the future. #strategy #planning #business-analysis
 - **Decision Matrix**: structured tool that uses a table to help you choose the best option from several alternatives by scoring them against **weighted** criteria, making complex choices more objective by reducing bias. You list options as rows and criteria as columns, assign importance (weight) to criteria, score each option against them, then multiply scores by weights to find the highest-scoring choice. #strategy #planning #decision-making
 - **Consumer-Driven Contract Testing (CDCT)** : testing approach where the consumer (e.g., frontend app) defines a "contract" (expected requests/responses) with the provider (e.g., backend API), creating tests against a mock provider; the provider then uses these contracts to verify their API meets consumer needs before deployment, creating a shared understanding and preventing integration issues, especially in microservices. This process ensures the provider fulfills consumer expectations without slow, brittle end-to-end tests, using tools like **Pact** to manage these contracts. #testing #microservices #api #contract-testing
-- [**Pact**](https://docs.pact.io/): tool for Consumer-driven contract testing #testing #contract-testing #microservices #api
+- **[Pact](https://docs.pact.io/)**: tool for Consumer-driven contract testing #testing #contract-testing #microservices #api
 - **[Dredd](https://dredd.org/en/latest/)**: tool for Provider-first contract testing, with OpenAPI. #testing #contract-testing #openapi #api
 - **Luhn check**: a mathematical algorithm that validates credit cards codes. It does not ensure that the card is active: it validates that the code of the credit card is valid. #algorithm
 - **Semantic segmentation**: an advanced form of object detection where, rather than indicate an object's location by drawing a box around it, the #ai model can identify the individual pixels in the image that belong to a particular object. #computer-vision
+- **Tokenization**: the operation done by an #LLM to convert plain text into tokens. For example, the sentence "I'm eating Pizza" is split into I, 'm, eat, ing, Pizza. 
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
