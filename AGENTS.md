@@ -29,7 +29,9 @@ Use folders consistently as **high-level categories** (examples already in use):
 | **azure/** | Broad notes on Azure services and concepts. |
 | **Azure CLI/** | Command-line usage, scripts, and CLI-oriented workflows. |
 | **Cheatsheets/** | Quick references for scripts, languages, and compact lookups. |
-| **general/** | General tech topics not tied to Azure (architecture, protocols, AI, security, etc.). |
+| **artificial-intelligence-and-machine-learning/** | AI and machine-learning concepts, models, responsible AI, LLM tooling, and related workflows. |
+| **software-architecture/** | Architecture concepts, patterns, quality practices, scalability, and system-design trade-offs. |
+| **general/** | General tech topics not covered by a more specific category, such as protocols and security. |
 | **how-to/** | Short guides for **repetitive operations** that are easy to forget. |
 
 **`index.md`:** Acts as a running glossary — short one-liner definitions with inline `#hashtags`. Use it for quick facts or stubs that do **not** warrant a dedicated note yet.
