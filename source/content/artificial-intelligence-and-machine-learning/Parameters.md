@@ -20,6 +20,7 @@ Unlike [[Hyperparameters]], parameters are not chosen manually for a training ru
 - Parameters are the model values learned from data during training.
 - They directly determine the model's predictions after training.
 - Different model families store parameters in different forms, such as weights, biases, or split values.
+- [[Model Weights|Weights]] are one important kind of parameter, especially in linear models and neural networks.
 - Training adjusts parameters to reduce error on the training objective.
 - Hyperparameters control how learning happens; parameters are the result of that learning.
 
@@ -87,6 +88,7 @@ In both cases, the trained parameters become the useful artifact of learning, wh
 
 ## Related
 
+- [[Model Weights]]
 - [[Hyperparameters]]
 - [[Supervised vs Self-Supervised Learning]]
 
