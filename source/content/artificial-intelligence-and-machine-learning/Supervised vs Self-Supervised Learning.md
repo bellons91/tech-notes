@@ -55,15 +55,15 @@ The learned encoder or full model is then evaluated or adapted on a **downstream
 
 ## Comparison
 
-| Aspect | Supervised learning | Self-supervised learning |
-| --- | --- | --- |
-| Target source | External labels or measured outcomes | Targets derived from the input data |
-| Primary goal | Learn a specified task directly | Learn reusable structure or representations |
-| Data requirement | Labeled examples | Usually large amounts of unlabeled data |
-| Typical training stage | Task-specific training | Pretraining before downstream adaptation |
-| Labeling cost | Can be high, especially with expert annotation | Lower for pretraining, though downstream evaluation may still need labels |
-| Objective alignment | Directly aligned with the labeled task | Depends on whether the pretext objective captures useful downstream information |
-| Common evaluation | Held-out labeled examples | Linear probing, fine-tuning, or task-specific evaluation |
+| Aspect                  | Supervised learning                                    | Self-supervised learning                                                               |
+| ----------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| Target source           | External labels or measured outcomes                   | Targets derived from the input data                                                    |
+| Primary goal            | Learn a specified task directly                        | Learn reusable structure or representations                                            |
+| Data requirement        | Labeled examples                                       | Usually large amounts of unlabeled data                                                |
+| Typical training stage  | Task-specific training                                 | Pretraining before downstream adaptation                                               |
+| Labeling cost           | Can be high, especially with expert annotation         | Lower for pretraining, though downstream evaluation may still need labels              |
+| Objective alignment     | Directly aligned with the labeled task                 | Depends on whether the pretext objective captures useful downstream information        |
+| Common evaluation       | Held-out labeled examples                              | Linear probing, fine-tuning, or task-specific evaluation                               |
 | Representative examples | Image classification, spam detection, price prediction | BERT masked-token prediction, SimCLR image pretraining, wav2vec 2.0 speech pretraining |
 
 ## How They Work Together

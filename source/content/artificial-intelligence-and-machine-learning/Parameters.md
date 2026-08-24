@@ -60,12 +60,12 @@ For many modern models, this update process uses gradient-based optimization.
 
 ## Parameters vs Hyperparameters
 
-| Aspect | Parameters | Hyperparameters |
-| --- | --- | --- |
-| How they are obtained | Learned from data during training | Chosen before or across training runs |
-| Examples | Weights, biases, embeddings, split thresholds | Learning rate, batch size, number of layers, regularization strength |
-| Role | Represent learned patterns | Control model structure or training behavior |
-| Change during a training run | Updated repeatedly | Usually fixed for that run, though some can follow schedules |
+| Aspect                       | Parameters                                    | Hyperparameters                                                      |
+| ---------------------------- | --------------------------------------------- | -------------------------------------------------------------------- |
+| How they are obtained        | Learned from data during training             | Chosen before or across training runs                                |
+| Examples                     | Weights, biases, embeddings, split thresholds | Learning rate, batch size, number of layers, regularization strength |
+| Role                         | Represent learned patterns                    | Control model structure or training behavior                         |
+| Change during a training run | Updated repeatedly                            | Usually fixed for that run, though some can follow schedules         |
 
 For a deeper comparison, see [[Hyperparameters]].
 
