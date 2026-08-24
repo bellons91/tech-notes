@@ -72,11 +72,11 @@ Techniques such as regularization, weight decay, normalization, and careful init
 
 ## Weights vs Parameters vs Hyperparameters
 
-| Concept | Meaning | Examples |
-| --- | --- | --- |
-| **Weights** | Learned values that scale or transform signals | Regression coefficients, neural-network connection values, weight matrices |
-| **Parameters** | All learned internal model values | Weights, biases, embeddings, split thresholds |
-| **Hyperparameters** | Configuration choices that control training or model structure | Learning rate, batch size, number of layers, regularization strength |
+| Concept             | Meaning                                                        | Examples                                                                   |
+| ------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Weights**         | Learned values that scale or transform signals                 | Regression coefficients, neural-network connection values, weight matrices |
+| **Parameters**      | All learned internal model values                              | Weights, biases, embeddings, split thresholds                              |
+| **Hyperparameters** | Configuration choices that control training or model structure | Learning rate, batch size, number of layers, regularization strength       |
 
 So:
 
