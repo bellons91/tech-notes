@@ -24,25 +24,25 @@ They are not learned directly from the training data. Instead, they control the 
 
 ## Parameters vs Hyperparameters
 
-| Aspect | Parameters | Hyperparameters |
-| --- | --- | --- |
-| How they are obtained | Learned during training | Set before or adjusted across training runs |
-| Examples | Weights, biases, tree split values | Learning rate, batch size, number of layers, regularization strength |
-| Role | Encode patterns from data | Control the training process or model capacity |
-| Changes within one training run | Usually updated many times | Usually fixed for that run, though some can follow schedules |
+| Aspect                          | Parameters                         | Hyperparameters                                                      |
+| ------------------------------- | ---------------------------------- | -------------------------------------------------------------------- |
+| How they are obtained           | Learned during training            | Set before or adjusted across training runs                          |
+| Examples                        | Weights, biases, tree split values | Learning rate, batch size, number of layers, regularization strength |
+| Role                            | Encode patterns from data          | Control the training process or model capacity                       |
+| Changes within one training run | Usually updated many times         | Usually fixed for that run, though some can follow schedules         |
 
 ## Common Hyperparameters
 
-| Hyperparameter | What it controls | Typical effect if too low | Typical effect if too high |
-| --- | --- | --- | --- |
-| **Learning rate** | Step size of each optimization update | Training can be very slow | Training can diverge or oscillate |
-| **Batch size** | Number of examples per update | Noisy gradients, slower throughput | High memory usage, weaker regularization effect |
-| **Number of epochs** | How long training continues | Underfitting | Overfitting |
-| **Model size / depth** | Representational capacity | Model may be too simple | Model may memorize noise or become expensive |
-| **Regularization strength** | Penalty on overly complex solutions | Overfitting risk increases | Model may underfit |
-| **Dropout rate** | Fraction of units dropped during training | Less regularization | Training signal can become too weak |
-| **Weight decay** | Shrinks large weights | Weights may grow too freely | Model may become too constrained |
-| **Number of trees / tree depth** | Capacity in ensemble/tree models | Weak predictive power | Higher variance and cost |
+| Hyperparameter                   | What it controls                          | Typical effect if too low          | Typical effect if too high                      |
+| -------------------------------- | ----------------------------------------- | ---------------------------------- | ----------------------------------------------- |
+| **Learning rate**                | Step size of each optimization update     | Training can be very slow          | Training can diverge or oscillate               |
+| **Batch size**                   | Number of examples per update             | Noisy gradients, slower throughput | High memory usage, weaker regularization effect |
+| **Number of epochs**             | How long training continues               | Underfitting                       | Overfitting                                     |
+| **Model size / depth**           | Representational capacity                 | Model may be too simple            | Model may memorize noise or become expensive    |
+| **Regularization strength**      | Penalty on overly complex solutions       | Overfitting risk increases         | Model may underfit                              |
+| **Dropout rate**                 | Fraction of units dropped during training | Less regularization                | Training signal can become too weak             |
+| **Weight decay**                 | Shrinks large weights                     | Weights may grow too freely        | Model may become too constrained                |
+| **Number of trees / tree depth** | Capacity in ensemble/tree models          | Weak predictive power              | Higher variance and cost                        |
 
 The exact set of hyperparameters depends on the algorithm:
 
