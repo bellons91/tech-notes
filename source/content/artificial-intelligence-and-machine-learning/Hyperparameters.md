@@ -12,11 +12,11 @@ aliases:
 
 Hyperparameters are configuration choices set **before or during training** that influence how a machine-learning model learns, how complex it can become, and how well it generalizes to unseen data.
 
-They are not learned directly from the training data. Instead, they control the training process or the model structure, while the model's **parameters** (such as weights and biases) are learned by optimization.
+They are not learned directly from the training data. Instead, they control the training process or the model structure, while the model's [[Parameters|parameters]] (such as weights and biases) are learned by optimization.
 
 ## Summary
 
-- **Parameters** are learned from data; **hyperparameters** are chosen by the practitioner or tuning process.
+- [[Parameters|Parameters]] are learned from data; **hyperparameters** are chosen by the practitioner or tuning process.
 - Hyperparameters affect training speed, stability, model capacity, and generalization.
 - Poor hyperparameter choices can cause **underfitting**, **overfitting**, slow convergence, or unstable training.
 - Hyperparameters are typically selected using a **validation set** or cross-validation, not the final test set.
@@ -120,6 +120,7 @@ Uses results from earlier trials to choose more promising next trials. It is use
 ## Related
 
 - [[Supervised vs Self-Supervised Learning]]
+- [[Parameters]]
 - [[Responsible AI]]
 
 ## Sources
