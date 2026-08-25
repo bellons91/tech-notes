@@ -58,11 +58,11 @@ The idea is that correct reasoning may be more **stable across samples** than in
 
 ## Trade-offs
 
-| Benefit | Cost |
-| --- | --- |
-| Higher reasoning accuracy on many benchmarks | Roughly 32x more inference calls than one sample |
-| Less dependence on one brittle reasoning trace | Higher latency |
-| Better benchmark performance on tasks like [[MMLU]] or math reasoning | Higher token and compute cost |
+| Benefit                                                               | Cost                                             |
+| --------------------------------------------------------------------- | ------------------------------------------------ |
+| Higher reasoning accuracy on many benchmarks                          | Roughly 32x more inference calls than one sample |
+| Less dependence on one brittle reasoning trace                        | Higher latency                                   |
+| Better benchmark performance on tasks like [[MMLU]] or math reasoning | Higher token and compute cost                    |
 
 Because of this, CoT@32 is best understood as an **evaluation or high-budget inference setting**, not a default production configuration.
 
