@@ -36,15 +36,15 @@ Common goals include:
 
 ## Common Techniques
 
-| Technique | Main idea | Typical benefit | Typical trade-off |
-| --- | --- | --- | --- |
-| **Quantization** | Represent weights or activations with lower precision | Lower memory use and faster execution | Possible quality loss |
-| **Pruning** | Remove less important weights, channels, or blocks | Smaller and sometimes faster model | Accuracy can degrade if too aggressive |
-| **Distillation** | Train a smaller student model from a larger teacher | Better speed-cost profile | Student may lose capability |
-| **Batching** | Process several requests together | Higher throughput | Individual request latency may rise |
-| **Compilation / graph optimization** | Fuse operations or optimize execution for a backend | Faster runtime | Platform-specific complexity |
-| **Caching** | Reuse repeated work or outputs | Lower latency and cost | Cache invalidation and hit-rate limits |
-| **Speculative or assisted decoding** | Use a smaller helper model or heuristic to accelerate generation | Faster token generation | More serving complexity |
+| Technique                            | Main idea                                                        | Typical benefit                       | Typical trade-off                      |
+| ------------------------------------ | ---------------------------------------------------------------- | ------------------------------------- | -------------------------------------- |
+| **Quantization**                     | Represent weights or activations with lower precision            | Lower memory use and faster execution | Possible quality loss                  |
+| **Pruning**                          | Remove less important weights, channels, or blocks               | Smaller and sometimes faster model    | Accuracy can degrade if too aggressive |
+| **Distillation**                     | Train a smaller student model from a larger teacher              | Better speed-cost profile             | Student may lose capability            |
+| **Batching**                         | Process several requests together                                | Higher throughput                     | Individual request latency may rise    |
+| **Compilation / graph optimization** | Fuse operations or optimize execution for a backend              | Faster runtime                        | Platform-specific complexity           |
+| **Caching**                          | Reuse repeated work or outputs                                   | Lower latency and cost                | Cache invalidation and hit-rate limits |
+| **Speculative or assisted decoding** | Use a smaller helper model or heuristic to accelerate generation | Faster token generation               | More serving complexity                |
 
 ## Model-Level vs System-Level Optimization
 
