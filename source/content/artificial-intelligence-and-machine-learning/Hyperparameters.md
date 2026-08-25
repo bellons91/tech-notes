@@ -61,6 +61,8 @@ Hyperparameters define important trade-offs:
 
 Because of these trade-offs, hyperparameter tuning is a core part of model development rather than a minor cleanup step.
 
+Some hyperparameters, such as layer count, hidden size, or sequence length, also influence serving cost later in production. See [[Inference Optimization]].
+
 ## How Tuning Usually Works
 
 Hyperparameters should be chosen against a validation process:
@@ -121,6 +123,7 @@ Uses results from earlier trials to choose more promising next trials. It is use
 
 - [[Supervised vs Self-Supervised Learning]]
 - [[Parameters]]
+- [[Inference Optimization]]
 - [[Responsible AI]]
 
 ## Sources

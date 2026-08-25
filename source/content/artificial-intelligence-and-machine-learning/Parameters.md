@@ -35,7 +35,7 @@ Examples:
 - In an **embedding model**, parameters include the embedding vectors.
 - In a **decision tree**, the learned structure and split thresholds are model parameters.
 
-After training, inference uses those learned values without changing them unless the model is trained again or fine-tuned.
+After training, inference uses those learned values without changing them unless the model is trained again or fine-tuned. See also [[Inference Optimization]].
 
 ## How Parameters Are Learned
 
@@ -85,11 +85,13 @@ In both cases, the trained parameters become the useful artifact of learning, wh
 - More parameters can increase representational capacity, but they also increase compute, memory, and overfitting risk.
 - Learned parameters depend on the dataset, objective, initialization, optimizer, and hyperparameter choices.
 - Fine-tuning reuses existing parameters and updates them on a new downstream task or domain.
+- Serving performance depends partly on how efficiently those parameters can be executed at prediction time. See [[Inference Optimization]].
 
 ## Related
 
 - [[Model Weights]]
 - [[Hyperparameters]]
+- [[Inference Optimization]]
 - [[Supervised vs Self-Supervised Learning]]
 
 ## Sources
