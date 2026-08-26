@@ -30,7 +30,7 @@ Supervised and self-supervised learning differ mainly in how they obtain the tar
 
 ### Supervised Learning
 
-A supervised dataset contains **features** and a corresponding **label** for each training example. The model predicts the label, compares its prediction with the known value through a loss function, and updates its parameters to reduce that loss.
+A supervised dataset contains **features** and a corresponding **label** for each training example. The model predicts the label, compares its prediction with the known value through a loss function, and updates its [[Parameters|parameters]] to reduce that loss.
 
 Typical tasks include:
 
@@ -51,19 +51,19 @@ The initial objective is often a **pretext task** chosen to make the model learn
 - **Contrastive or joint-embedding learning:** make representations of related views similar while distinguishing unrelated examples. SimCLR uses augmented views of images.
 - **Latent prediction:** predict a representation of hidden or future content rather than reconstructing every raw detail.
 
-The learned encoder or full model is then evaluated or adapted on a **downstream task**. This stage often uses labeled data even though pretraining did not.
+The learned encoder or full model is then evaluated or adapted on a **downstream task**. This stage often uses labeled data even though pretraining did not. In practice, the important output of pretraining is a useful set of learned [[Parameters|parameters]] or representations that can be reused.
 
 ## Comparison
 
-| Aspect | Supervised learning | Self-supervised learning |
-| --- | --- | --- |
-| Target source | External labels or measured outcomes | Targets derived from the input data |
-| Primary goal | Learn a specified task directly | Learn reusable structure or representations |
-| Data requirement | Labeled examples | Usually large amounts of unlabeled data |
-| Typical training stage | Task-specific training | Pretraining before downstream adaptation |
-| Labeling cost | Can be high, especially with expert annotation | Lower for pretraining, though downstream evaluation may still need labels |
-| Objective alignment | Directly aligned with the labeled task | Depends on whether the pretext objective captures useful downstream information |
-| Common evaluation | Held-out labeled examples | Linear probing, fine-tuning, or task-specific evaluation |
+| Aspect                  | Supervised learning                                    | Self-supervised learning                                                               |
+| ----------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| Target source           | External labels or measured outcomes                   | Targets derived from the input data                                                    |
+| Primary goal            | Learn a specified task directly                        | Learn reusable structure or representations                                            |
+| Data requirement        | Labeled examples                                       | Usually large amounts of unlabeled data                                                |
+| Typical training stage  | Task-specific training                                 | Pretraining before downstream adaptation                                               |
+| Labeling cost           | Can be high, especially with expert annotation         | Lower for pretraining, though downstream evaluation may still need labels              |
+| Objective alignment     | Directly aligned with the labeled task                 | Depends on whether the pretext objective captures useful downstream information        |
+| Common evaluation       | Held-out labeled examples                              | Linear probing, fine-tuning, or task-specific evaluation                               |
 | Representative examples | Image classification, spam detection, price prediction | BERT masked-token prediction, SimCLR image pretraining, wav2vec 2.0 speech pretraining |
 
 ## How They Work Together
@@ -114,6 +114,7 @@ Use a **combined approach** when a pretrained representation can reduce labeling
 ## Related
 
 - [[Masked vs Autoregressive Language Models]] - compares two objectives commonly used in self-supervised language-model pretraining.
+- [[Parameters]] - explains the learned internal values updated during training.
 - [[Responsible AI]] - covers broader concerns that apply regardless of how training targets are obtained.
 
 ## Sources
