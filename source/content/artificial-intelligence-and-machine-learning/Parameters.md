@@ -54,7 +54,7 @@ At a high level:
 
 1. The model starts with initial parameter values.
 2. It makes predictions on training examples.
-3. A loss function measures the error.
+3. A loss function measures the error between the model's prediction and the expected result. In simple terms, **loss** is the numeric score that says how wrong the model currently is.
 4. An optimization method updates the parameters to reduce that error.
 
 For many modern models, this update process uses gradient-based optimization.

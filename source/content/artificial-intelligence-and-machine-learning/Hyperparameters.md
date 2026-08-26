@@ -24,12 +24,12 @@ They are not learned directly from the training data. Instead, they control the 
 
 ## Parameters vs Hyperparameters
 
-| Aspect                          | Parameters                         | Hyperparameters                                                      |
-| ------------------------------- | ---------------------------------- | -------------------------------------------------------------------- |
-| How they are obtained           | Learned during training            | Set before or adjusted across training runs                          |
-| Examples                        | Weights, biases, tree split values | Learning rate, batch size, number of layers, regularization strength |
-| Role                            | Encode patterns from data          | Control the training process or model capacity                       |
-| Changes within one training run | Usually updated many times         | Usually fixed for that run, though some can follow schedules         |
+| Aspect                          | Parameters                 | Hyperparameters                                              |
+| ------------------------------- | -------------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------- |
+| How they are obtained           | Learned during training    | Set before or adjusted across training runs                  |
+| Examples                        | [[Model Weights            | Weights]], biases, tree split values                         | Learning rate, batch size, number of layers, regularization strength |
+| Role                            | Encode patterns from data  | Control the training process or model capacity               |
+| Changes within one training run | Usually updated many times | Usually fixed for that run, though some can follow schedules |
 
 ## Common Hyperparameters
 

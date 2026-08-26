@@ -1,5 +1,5 @@
 ---
-title: "MMLU"
+title: "Massive Multitask Language Understanding"
 tags:
   - artificial-intelligence
   - llm
@@ -7,7 +7,7 @@ tags:
   - benchmark
   - reasoning
 aliases:
-  - Massive Multitask Language Understanding
+  - MMLU
 ---
 
 **MMLU** stands for **Massive Multitask Language Understanding**, a benchmark used to evaluate how well language models perform across a wide range of knowledge and reasoning tasks.

@@ -45,13 +45,32 @@ The prompt includes worked examples that show both:
 
 This teaches the model the expected reasoning pattern through demonstration.
 
+Example:
+
+```text
+Q: Roger has 3 boxes with 4 pencils each. He buys 2 more pencils. How many pencils does he have now?
+A: Let's think step by step. 3 boxes with 4 pencils each means 3 × 4 = 12 pencils. Then he buys 2 more pencils, so 12 + 2 = 14. The answer is 14.
+```
+
 ### Zero-Shot CoT
 
 The prompt gives a direct instruction such as asking the model to think step by step, even without examples.
 
+Example:
+
+```text
+Prompt: Roger has 3 boxes with 4 pencils each. He buys 2 more pencils. Think step by step, then give the final answer.
+```
+
 ### Self-Consistency Variants
 
 Instead of taking one CoT sample, the system samples multiple reasoning traces and selects the most consistent final answer. See [[CoT@32]].
+
+Example:
+
+```text
+Prompt the model 32 times for the same math question with chain-of-thought enabled, then choose the final answer that appears most often.
+```
 
 ## Typical Pattern
 
