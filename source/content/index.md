@@ -67,6 +67,7 @@ tags: glossary, index, reference
 - **Luhn check**: a mathematical algorithm that validates credit cards codes. It does not ensure that the card is active: it validates that the code of the credit card is valid. #algorithm
 - **Semantic segmentation**: an advanced form of object detection where, rather than indicate an object's location by drawing a box around it, the #ai model can identify the individual pixels in the image that belong to a particular object. #computer-vision
 - **Tokenization**: the operation done by an #LLM to convert plain text into tokens. For example, the sentence "I'm eating Pizza" is split into I, 'm, eat, ing, Pizza. 
+- **Heuristics**: practical rule-of-thumb strategies used to make decisions or solve problems quickly when exhaustive analysis is too costly or unnecessary. #ai #problem-solving #decision-making
 
 - [ ] aggiungi tag
 - [ ] vedi come organizzare tag
