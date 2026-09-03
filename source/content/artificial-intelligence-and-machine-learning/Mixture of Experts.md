@@ -27,8 +27,6 @@ This note is a quick reference for understanding why MoE is used in large AI mod
 - MoE can reduce compute relative to equally large dense models, but it increases system complexity and communication cost.
 - Expert parallelism is a common distributed strategy for running MoE models across multiple GPUs.
 
-## Details
-
 ## Core idea
 
 An MoE layer typically contains:
