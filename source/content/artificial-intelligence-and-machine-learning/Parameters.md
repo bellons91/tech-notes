@@ -23,6 +23,7 @@ Unlike [[Hyperparameters]], parameters are not chosen manually for a training ru
 - [[Model Weights|Weights]] are one important kind of parameter, especially in linear models and neural networks.
 - Training adjusts parameters to reduce error on the training objective.
 - Hyperparameters control how learning happens; parameters are the result of that learning.
+- In sparse models, only a subset of total parameters is active for a specific input.
 
 ## What Parameters Do
 
@@ -87,14 +88,31 @@ In both cases, the trained parameters become the useful artifact of learning, wh
 - Fine-tuning reuses existing parameters and updates them on a new downstream task or domain.
 - Serving performance depends partly on how efficiently those parameters can be executed at prediction time. See [[Inference Optimization]].
 
+## Dense vs Sparse Models
+
+Many model descriptions cite a **total parameter count**, but runtime behavior depends on whether the model is dense or sparse:
+
+- **Dense models** use most or all parameters for each token or input.
+- **Sparse models** activate only part of the full parameter set for each token or input.
+
+In practice, sparse architectures (for example, mixture-of-experts designs often used in modern [[Transformer Architecture|transformer]] systems) route tokens to selected expert blocks. This means:
+
+- The model can have a very large total parameter count.
+- Only a subset of parameters is active per token during inference.
+- Compute cost can be lower than a same-size dense model, even with similar total parameters.
+
+So, when comparing large AI models, it is useful to distinguish **total parameters** from **active parameters per token**.
+
 ## Related
 
 - [[Model Weights]]
 - [[Hyperparameters]]
 - [[Inference Optimization]]
 - [[Supervised vs Self-Supervised Learning]]
+- [[Transformer Architecture]]
 
 ## Sources
 
 - [Google for Developers - Parameters and hyperparameters](https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture)
 - [DeepLearning.AI - Parameters and Hyperparameters in Deep Learning](https://www.deeplearning.ai/resources/glossary/hyperparameter/)
+- [Hugging Face - Mixture of Experts Explained](https://huggingface.co/blog/moe)
