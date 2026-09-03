@@ -100,6 +100,7 @@ A useful optimization should be judged on both:
 - [[Parameters]]
 - [[Hyperparameters]]
 - [[RAG Pipeline Caching]]
+- [[TPU]]
 
 ## Sources
 
