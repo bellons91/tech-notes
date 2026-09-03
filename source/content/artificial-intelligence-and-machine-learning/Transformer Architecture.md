@@ -83,6 +83,7 @@ flowchart LR
 - [[Chain of Thought Prompting]]
 - [[Inference Optimization]]
 - [[Responsible AI]]
+- [[Mixture of Experts]]
 
 ## Sources
 

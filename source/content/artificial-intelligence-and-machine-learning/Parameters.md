@@ -95,7 +95,7 @@ Many model descriptions cite a **total parameter count**, but runtime behavior d
 - **Dense models** use most or all parameters for each token or input.
 - **Sparse models** activate only part of the full parameter set for each token or input.
 
-In practice, sparse architectures (for example, mixture-of-experts designs often used in modern [[Transformer Architecture|transformer]] systems) route tokens to selected expert blocks. This means:
+In practice, sparse architectures (for example, [[Mixture of Experts|mixture-of-experts]] designs often used in modern [[Transformer Architecture|transformer]] systems) route tokens to selected expert blocks. This means:
 
 - The model can have a very large total parameter count.
 - Only a subset of parameters is active per token during inference.
@@ -110,6 +110,7 @@ So, when comparing large AI models, it is useful to distinguish **total paramete
 - [[Inference Optimization]]
 - [[Supervised vs Self-Supervised Learning]]
 - [[Transformer Architecture]]
+- [[Mixture of Experts]]
 
 ## Sources
 
