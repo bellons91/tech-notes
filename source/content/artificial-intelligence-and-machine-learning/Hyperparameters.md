@@ -37,7 +37,7 @@ They are not learned directly from the training data. Instead, they control the 
 | -------------------------------- | ----------------------------------------- | ---------------------------------- | ----------------------------------------------- |
 | **Learning rate**                | Step size of each optimization update     | Training can be very slow          | Training can diverge or oscillate               |
 | **Batch size**                   | Number of examples per update             | Noisy gradients, slower throughput | High memory usage, weaker regularization effect |
-| **Number of epochs**             | How long training continues               | Underfitting                       | Overfitting                                     |
+| **[[Epochs|Number of epochs]]** | How long training continues               | Underfitting                       | Overfitting                                     |
 | **Model size / depth**           | Representational capacity                 | Model may be too simple            | Model may memorize noise or become expensive    |
 | **Regularization strength**      | Penalty on overly complex solutions       | Overfitting risk increases         | Model may underfit                              |
 | **Dropout rate**                 | Fraction of units dropped during training | Less regularization                | Training signal can become too weak             |
@@ -125,6 +125,7 @@ Uses results from earlier trials to choose more promising next trials. It is use
 - [[Parameters]]
 - [[Inference Optimization]]
 - [[Responsible AI]]
+- [[Epochs]]
 
 ## Sources
 
