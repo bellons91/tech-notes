@@ -1,5 +1,5 @@
 ---
-title: "Ontologies in AI"
+title: "Ontologies"
 tags:
   - ai
   - machine-learning
@@ -70,6 +70,7 @@ Explicit relationships and type hierarchies can make AI outputs easier to trace 
 
 ## Related
 
+- [[Ontologies and Domain-Driven Design]]
 - [[RAG Pipeline Caching]]
 - [[Model Context Protocol]]
 - [[Responsible AI]]
