@@ -1,5 +1,5 @@
 ---
-title: "TPU"
+title: "Tensor Processing Unit"
 tags:
   - ai
   - machine-learning
@@ -8,7 +8,7 @@ tags:
   - model-training
   - inference
 aliases:
-  - Tensor Processing Unit
+  - TPU
   - Google TPU
   - Cloud TPU
 ---
