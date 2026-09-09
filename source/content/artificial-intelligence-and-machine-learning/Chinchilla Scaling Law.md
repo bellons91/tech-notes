@@ -13,7 +13,7 @@ aliases:
   - Compute-Optimal Scaling
 ---
 
-The **Chinchilla scaling law** is the compute-optimal training result popularized by DeepMind's *Training Compute-Optimal Large Language Models* paper. It is a useful mental model for understanding how to balance model size and training data when the training compute budget is fixed.
+The **Chinchilla scaling law** is the compute-optimal training result popularized by DeepMind's _Training Compute-Optimal Large Language Models_ paper. It is a useful mental model for understanding how to balance model size and training data when the training compute budget is fixed.
 
 ## Summary
 
@@ -41,10 +41,10 @@ Earlier scaling conversations often emphasized growing parameter count aggressiv
 
 A simplified comparison:
 
-| View | Main emphasis |
-| --- | --- |
-| Pre-Chinchilla reading of scaling | Grow model size strongly under a fixed compute budget |
-| Chinchilla | Use smaller models than that earlier practice and train them on much more data |
+| View                              | Main emphasis                                                                  |
+| --------------------------------- | ------------------------------------------------------------------------------ |
+| Pre-Chinchilla reading of scaling | Grow model size strongly under a fixed compute budget                          |
+| Chinchilla                        | Use smaller models than that earlier practice and train them on much more data |
 
 That shift influenced later open and closed model programs, including smaller-but-better-trained model families.
 

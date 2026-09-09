@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Davide&#039;s notes 🐧</title>
+      <link>https://quartz.jzhao.xyz</link>
+      <description>Last 10 notes on Davide&#039;s notes 🐧</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Chinchilla Scaling Law</title>
+    <link>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/Chinchilla-Scaling-Law</link>
+    <guid>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/Chinchilla-Scaling-Law</guid>
+    <description>The Chinchilla scaling law is the compute-optimal training result popularized by DeepMind’s Training Compute-Optimal Large Language Models paper. It is a useful mental model for understanding how to balance model size and training data when the training compute budget is fixed.</description>
+    <pubDate>Wed, 09 Sep 2026 15:48:09 GMT</pubDate>
+  </item><item>
+    <title>FLOPs vs FLOP per Second</title>
+    <link>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/FLOPs-vs-FLOP-per-Second</link>
+    <guid>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/FLOPs-vs-FLOP-per-Second</guid>
+    <description>This note compares FLOPs and FLOP/s because the two terms are closely related but describe different things. It is mainly for avoiding terminology mistakes when reading AI papers, profiler output, and hardware marketing material.</description>
+    <pubDate>Wed, 09 Sep 2026 15:48:09 GMT</pubDate>
+  </item><item>
+    <title>FLOP per Second</title>
+    <link>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/FLOP-per-Second</link>
+    <guid>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/FLOP-per-Second</guid>
+    <description>FLOP/s is a throughput metric that describes how many floating-point operations a system can execute in one second. This note focuses on the performance meaning of the term, which is often written as FLOPS in hardware and benchmarking material.</description>
+    <pubDate>Wed, 09 Sep 2026 15:48:09 GMT</pubDate>
+  </item><item>
+    <title>FLOPs</title>
+    <link>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/FLOPs</link>
+    <guid>https://quartz.jzhao.xyz/artificial-intelligence-and-machine-learning/FLOPs</guid>
+    <description>FLOPs in the strict sense are a count of floating-point operations such as adds, multiplies, and fused multiply-add work used to describe how much numeric computation a workload ...</description>
+    <pubDate>Wed, 09 Sep 2026 15:48:09 GMT</pubDate>
+  </item><item>
+    <title>Architecture Decision Matrix</title>
+    <link>https://quartz.jzhao.xyz/software-architecture/Architecture-Decision-Matrix</link>
+    <guid>https://quartz.jzhao.xyz/software-architecture/Architecture-Decision-Matrix</guid>
+    <description>A decision matrix scores options against weighted criteria so you can compare alternatives systematically (for example picking a UI framework or a messaging technology) ...</description>
+    <pubDate>Wed, 09 Sep 2026 15:45:20 GMT</pubDate>
+  </item><item>
+    <title>Domain-Driven Design</title>
+    <link>https://quartz.jzhao.xyz/software-architecture/Domain-Driven-Design</link>
+    <guid>https://quartz.jzhao.xyz/software-architecture/Domain-Driven-Design</guid>
+    <description>Domain-Driven Design (DDD) is an approach for building software around a deep, continuously refined model of a business domain. It is most useful when business rules are complex enough that collaboration and precise language matter more than simple data entry and CRUD operations.</description>
+    <pubDate>Wed, 09 Sep 2026 15:45:20 GMT</pubDate>
+  </item><item>
+    <title>Event Sourcing</title>
+    <link>https://quartz.jzhao.xyz/software-architecture/Event-Sourcing</link>
+    <guid>https://quartz.jzhao.xyz/software-architecture/Event-Sourcing</guid>
+    <description>Event Sourcing persists application state by storing every change as an immutable event. Unlike Event-Driven Architecture, which often spans services and integration boundaries, event sourcing is primarily an application-level state model.</description>
+    <pubDate>Wed, 09 Sep 2026 15:45:20 GMT</pubDate>
+  </item><item>
+    <title>Event-Driven Architecture</title>
+    <link>https://quartz.jzhao.xyz/software-architecture/Event-Driven-Architecture</link>
+    <guid>https://quartz.jzhao.xyz/software-architecture/Event-Driven-Architecture</guid>
+    <description>Event-driven architecture (EDA) is a paradigm built around the production, detection, and consumption of events, enabling scalability, fault tolerance, and loose coupling between ...</description>
+    <pubDate>Wed, 09 Sep 2026 15:45:20 GMT</pubDate>
+  </item><item>
+    <title>Medallion Architecture</title>
+    <link>https://quartz.jzhao.xyz/software-architecture/Medallion-Architecture</link>
+    <guid>https://quartz.jzhao.xyz/software-architecture/Medallion-Architecture</guid>
+    <description>The medallion architecture is a data design pattern for organizing tables in a lakehouse into quality layers: Bronze (raw), Silver (validated), and Gold (enriched) ...</description>
+    <pubDate>Wed, 09 Sep 2026 15:45:20 GMT</pubDate>
+  </item><item>
+    <title>Scale Down</title>
+    <link>https://quartz.jzhao.xyz/software-architecture/Scale-down</link>
+    <guid>https://quartz.jzhao.xyz/software-architecture/Scale-down</guid>
+    <description>Scaling down removes capacity from existing instances—for example fewer vCPUs or less RAM per machine. Contrast with Scale up.</description>
+    <pubDate>Wed, 09 Sep 2026 15:45:20 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

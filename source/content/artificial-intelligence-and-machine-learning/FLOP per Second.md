@@ -39,10 +39,10 @@ This makes FLOP/s a **performance rate**, similar in spirit to requests per seco
 
 ## Theoretical vs Achieved FLOP/s
 
-| Type | Meaning |
-| --- | --- |
+| Type                 | Meaning                                                                          |
+| -------------------- | -------------------------------------------------------------------------------- |
 | **Theoretical peak** | Maximum arithmetic throughput implied by the hardware design and precision mode. |
-| **Achieved FLOP/s** | Throughput actually observed for a specific workload, kernel, and runtime setup. |
+| **Achieved FLOP/s**  | Throughput actually observed for a specific workload, kernel, and runtime setup. |
 
 Real workloads usually achieve less than peak because of:
 

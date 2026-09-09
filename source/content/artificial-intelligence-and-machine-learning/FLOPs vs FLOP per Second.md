@@ -25,14 +25,14 @@ This note compares **FLOPs** and **FLOP/s** because the two terms are closely re
 
 ## Side-by-Side Comparison
 
-| Aspect | FLOPs | FLOP/s |
-| --- | --- | --- |
-| Core meaning | Total floating-point operations | Floating-point operations executed per second |
-| Answers | How much compute is required? | How fast is the compute executed? |
-| Depends on time | No | Yes |
-| Typical use | Model cost estimation, algorithm analysis | Hardware specs, benchmark throughput, utilization |
-| Common units | raw count, MFLOPs, GFLOPs as a total amount | GFLOPS, TFLOPS, PFLOPS as rates |
-| Can vary by hardware for same workload | No, if counted the same way | Yes |
+| Aspect                                 | FLOPs                                       | FLOP/s                                            |
+| -------------------------------------- | ------------------------------------------- | ------------------------------------------------- |
+| Core meaning                           | Total floating-point operations             | Floating-point operations executed per second     |
+| Answers                                | How much compute is required?               | How fast is the compute executed?                 |
+| Depends on time                        | No                                          | Yes                                               |
+| Typical use                            | Model cost estimation, algorithm analysis   | Hardware specs, benchmark throughput, utilization |
+| Common units                           | raw count, MFLOPs, GFLOPs as a total amount | GFLOPS, TFLOPS, PFLOPS as rates                   |
+| Can vary by hardware for same workload | No, if counted the same way                 | Yes                                               |
 
 ## Simple Intuition
 

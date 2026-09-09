@@ -62,12 +62,12 @@ For AI and ML notes, FLOPs are useful because they provide a rough hardware-inde
 
 ## Common Caveats
 
-| Caveat | Why it matters |
-| --- | --- |
-| FLOPs are often estimated | Different tools may count the same operation slightly differently. |
-| FLOPs ignore non-arithmetic costs | Memory movement and orchestration can dominate runtime. |
-| Precision changes the story | FP32, BF16, FP16, and tensor-core paths can have different effective throughput. |
-| Sparse execution complicates comparisons | Total model size and active compute per token are not always the same. |
+| Caveat                                   | Why it matters                                                                   |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| FLOPs are often estimated                | Different tools may count the same operation slightly differently.               |
+| FLOPs ignore non-arithmetic costs        | Memory movement and orchestration can dominate runtime.                          |
+| Precision changes the story              | FP32, BF16, FP16, and tensor-core paths can have different effective throughput. |
+| Sparse execution complicates comparisons | Total model size and active compute per token are not always the same.           |
 
 ## Related
 
